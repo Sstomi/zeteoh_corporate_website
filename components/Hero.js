@@ -8,10 +8,10 @@ export default function Hero() {
       <div className="bg-BG-image pt-24 lg:pt-4">
         <div className="px-4 py-1 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
           <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <h1 className="font-test max-w-xl mb-6 font-ud text-5xl font-bold leading-none tracking-tight text-gray-100 sm:text-7xl md:mx-auto">
+            <h1 className="font-test max-w-xl mb-6 text-5xl font-bold leading-none tracking-tight text-gray-100 sm:text-7xl md:mx-auto">
             {t('main-title')} 
             </h1>
-            <p className="pt-8 font-test font-bold text-base text-gray-100 md:text-lg">
+            <p className="pt-8 font-bold text-base text-gray-100 md:text-lg">
               {t('introduction')} 
             </p>
           </div>
