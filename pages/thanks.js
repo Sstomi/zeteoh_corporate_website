@@ -7,7 +7,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Navbar from "../components/Navbar";
 import Message from "../components/Message";
 
-
 import Footer from "../components/Footer";
 
 const Thanks = () => {
@@ -19,7 +18,6 @@ const Thanks = () => {
       <main>
         <Navbar />
         <Message />
-        
       </main>
       <Footer />
     </div>

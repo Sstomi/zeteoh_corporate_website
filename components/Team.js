@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 export default function Team() {
   const { t } = useTranslation("team");
   return (
-    <div className="bg-team-background">
+    <div className="bg-[url('/images/Home/bg.svg')]">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
           <h2 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl sm:leading-none">
@@ -23,10 +23,10 @@ export default function Team() {
                 alt="Yann"
               />
             </div>
-            <div className="flex flex-col sm:text-center">
-              <p className="text-lg font-noto font-bold"> {t("team_yann")}</p>
-              <p className="mb-5 text-xs text-gray-800">{t("yann_title")}</p>
-              <div className="flex items-center space-x-3 sm:justify-center">
+            <div className="flex flex-col text-center">
+              <p className="text-xl font-bold"> {t("team_yann")}</p>
+              <p className="mb-5 text-base text-gray-800">Co-founder&CEO</p>
+              <div className="flex items-center space-x-3 justify-center">
                 <a
                   href="https://twitter.com/Yannlg_"
                   className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -76,10 +76,10 @@ export default function Team() {
                 alt="Satomi"
               />
             </div>
-            <div className="flex flex-col sm:text-center">
-              <p className="text-lg font-noto font-bold">{t("team_satomi")}</p>
-              <p className="mb-5 text-xs text-gray-800">{t("satomi_title")}</p>
-              <div className="flex items-center space-x-3 sm:justify-center">
+            <div className="flex flex-col text-center">
+              <p className="text-xl font-bold">{t("team_satomi")}</p>
+              <p className="mb-5 text-base text-gray-800">Co-founder&COO</p>
+              <div className="flex items-center space-x-3 justify-center">
                 <a
                   href="https://twitter.com/Satomi48650478"
                   className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -129,10 +129,10 @@ export default function Team() {
                 alt="Adrien"
               />
             </div>
-            <div className="flex flex-col sm:text-center">
-              <p className="text-lg font-bold">{t("team_adrien")}</p>
-              <p className="mb-5 text-xs text-gray-800">{t("adrien_title")}</p>
-              <div className="flex items-center space-x-3 sm:justify-center">
+            <div className="flex flex-col text-center">
+              <p className="text-xl font-bold">{t("team_adrien")}</p>
+              <p className="mb-5 text-base text-gray-800">Data Scientist</p>
+              <div className="flex items-center space-x-3 justify-center">
                 <a
                   href="https://www.linkedin.com/in/carpentier-adrien/"
                   className="mr-6 text-gray-700"
