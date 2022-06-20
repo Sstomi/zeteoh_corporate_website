@@ -24,10 +24,10 @@ export default function Team() {
             alt="Yann"
           />
           </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-noto font-bold"> {t('team_yann')}</p>
-            <p className="mb-5 text-xs text-gray-800">Co-founder&CEO</p>
-            <div className="flex items-center space-x-3 sm:justify-center">
+          <div className="flex flex-col text-center">
+            <p className="text-xl font-bold"> {t('team_yann')}</p>
+            <p className="mb-5 text-base text-gray-800">Co-founder&CEO</p>
+            <div className="flex items-center space-x-3 justify-center">
               <a
                 href="https://twitter.com/Yannlg_"
                 className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -77,10 +77,10 @@ export default function Team() {
             alt="Satomi"
           />
           </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-noto font-bold">{t('team_satomi')}</p>
-            <p className="mb-5 text-xs text-gray-800">Co-founder&COO</p>
-            <div className="flex items-center space-x-3 sm:justify-center">
+          <div className="flex flex-col text-center">
+            <p className="text-xl font-bold">{t('team_satomi')}</p>
+            <p className="mb-5 text-base text-gray-800">Co-founder&COO</p>
+            <div className="flex items-center space-x-3 justify-center">
               <a
                 href="https://twitter.com/Satomi48650478"
                 className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -131,10 +131,10 @@ export default function Team() {
             alt="Adrien"
           />
           </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">{t('team_adrien')}</p>
-            <p className="mb-5 text-xs text-gray-800">Data Scientist</p>
-            <div className="flex items-center space-x-3 sm:justify-center">
+          <div className="flex flex-col text-center">
+            <p className="text-xl font-bold">{t('team_adrien')}</p>
+            <p className="mb-5 text-base text-gray-800">Data Scientist</p>
+            <div className="flex items-center space-x-3 justify-center">
               <a
             href="https://www.linkedin.com/in/carpentier-adrien/"
             className="mr-6 text-gray-700"
