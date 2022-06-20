@@ -25,7 +25,7 @@ export default function Team() {
             </div>
             <div className="flex flex-col text-center">
               <p className="text-xl font-bold"> {t("team_yann")}</p>
-              <p className="mb-5 text-base text-gray-800">Co-founder&CEO</p>
+              <p className="mb-5 text-base text-gray-800">{t("yann_title")}</p>
               <div className="flex items-center space-x-3 justify-center">
                 <a
                   href="https://twitter.com/Yannlg_"
@@ -78,7 +78,7 @@ export default function Team() {
             </div>
             <div className="flex flex-col text-center">
               <p className="text-xl font-bold">{t("team_satomi")}</p>
-              <p className="mb-5 text-base text-gray-800">Co-founder&COO</p>
+              <p className="mb-5 text-base text-gray-800">{t("satomi_title")}</p>
               <div className="flex items-center space-x-3 justify-center">
                 <a
                   href="https://twitter.com/Satomi48650478"
@@ -131,7 +131,7 @@ export default function Team() {
             </div>
             <div className="flex flex-col text-center">
               <p className="text-xl font-bold">{t("team_adrien")}</p>
-              <p className="mb-5 text-base text-gray-800">Data Scientist</p>
+              <p className="mb-5 text-base text-gray-800">{t("adrien_title")}</p>
               <div className="flex items-center space-x-3 justify-center">
                 <a
                   href="https://www.linkedin.com/in/carpentier-adrien/"
