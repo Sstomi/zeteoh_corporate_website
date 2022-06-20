@@ -64,7 +64,7 @@ export default function Contact() {
                 type="text"
                 className="bg-gray-100 mt-1 block w-full border border-gray-200 py-3 px-2"
                 name="お名前"
-                placeholder="Your Name"
+                placeholder={t("contact_placeholder_name")}
                 onChange={handleChange}
               />
             </label>
@@ -74,7 +74,7 @@ export default function Contact() {
                 type="text"
                 className="bg-gray-100 mt-1 block w-full border border-gray-200 py-3 px-2"
                 name="会社名"
-                placeholder="〇〇株式会社"
+                placeholder={t("contact_placeholder_company")}
                 onChange={handleChange}
               />
             </label>
@@ -84,7 +84,7 @@ export default function Contact() {
                 type="email"
                 className="bg-gray-100 mt-1 block w-full border border-gray-200 py-3 px-2"
                 name="email"
-                placeholder="john@example.com"
+                placeholder={t("contact_placeholder_email")}
                 onChange={handleChange}
               />
             </label>

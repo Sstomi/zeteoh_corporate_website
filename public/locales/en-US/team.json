@@ -1,6 +1,9 @@
 {
-    "team_title": "Core Team",
-    "team_yann": "Yann Le Guilly",
-    "team_satomi": "Satomi Le Guilly",
-    "team_adrien": "Adrien Carpentier"
+  "team_title": "Core Team",
+  "team_yann": "Yann Le Guilly",
+  "team_satomi": "Satomi Le Guilly",
+  "team_adrien": "Adrien Carpentier",
+  "yann_title": "Co-founder & CEO/CTO",
+  "satomi_title": "Co-founder & COO",
+  "adrien_title": "Data Scientist"
 }
