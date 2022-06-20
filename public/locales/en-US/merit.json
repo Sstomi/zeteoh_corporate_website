@@ -1,12 +1,12 @@
 {
-    "why": "Why Choose Us?",
-    "explanation": "You might think our solution is the same as many others. Here are the points which make us unique.",
-    "feature1_title": "Use One Tool Only",
-    "feature1_text" : "The wearable market is highly fragmented and supporting everything is a burden on your business. It increases the costs of developing and operating your product. Our solution offers unified access to your users’ physical activities, compatible with most wearable devices. The benefits for you are faster time to market and lower operating costs.",
-    "feature2_title": "Experiment Fast",
-    "feature2_text" : "Adopting a new tool can be challenging and sometimes discouraging for an organization. We developed our solution to allow you to start experimenting in a few hours, not days. You can create use cases very quickly and demonstrate the benefits of our solution for your business.",
-    "feature3_title": "Create Trust",
-    "feature3_text" : "Wearable device companies keep pushing for better detection capabilities. It creates biases and unfairness in the data and threatens your brand and the trust of your users. We are working hard to make sure the data are fair and make biases as lower as possible. You can use those data with peace of mind and focus on your core business.",
-    "feature4_title": "Focus on Your Objectives",
-    "feature4_text" : "Data Scientists spend 50 to 80% of their time on data preparation. The consequence is more human and computing resources. We make sure the data you get from our solution is easy to manipulate, consistent and documented. It allows you to decrease your costs and focus on your objectives."
+  "why": "Why Choose Us?",
+  "explanation": "You might think our solution is the same as many others. Here are the points which make us unique.",
+  "feature1_title": "Use One Tool Only",
+  "feature1_text": "The wearable market is highly fragmented and supporting everything is a burden on your business. It increases the costs of developing and operating your product. Our solution offers unified access to your users’ physical activities, compatible with most wearable devices. The benefits for you are faster time to market and lower operating costs.",
+  "feature2_title": "Experiment Fast",
+  "feature2_text": "Adopting a new tool can be challenging and sometimes discouraging for an organization. We developed our solution to allow you to start experimenting in a few hours, not days. You can create use cases very quickly and demonstrate the benefits of our solution for your business.",
+  "feature3_title": "Create Trust",
+  "feature3_text": "Wearable device companies keep pushing for better detection capabilities. It creates biases and unfairness in the data and threatens your brand and the trust of your users. We are working hard to make sure the data are fair and make biases as lower as possible.",
+  "feature4_title": "Focus on Your Objectives",
+  "feature4_text": "Data Scientists spend 50 to 80% of their time on data preparation. The consequence is more human and computing resources. We make sure the data you get from our solution is easy to manipulate, consistent and documented. It allows you to decrease your costs and focus on your objectives."
 }

@@ -11,11 +11,11 @@ export default function Merit() {
               features
             </p>
           </div>
-          <h2 className="max-w-lg mb-6 font-ud text-3xl font-bold leading-none tracking-tight text-gray-100 sm:text-5xl md:mx-auto">         
-              {t('why')}      
+          <h2 className="max-w-lg mb-6 font-ud text-3xl font-bold leading-none tracking-tight text-gray-100 sm:text-5xl md:mx-auto">
+            {t("why")}
           </h2>
           <p className="text-base text-gray-100 md:text-lg">
-          {t('explanation')}      
+            {t("explanation")}
           </p>
         </div>
         <div className="grid gap-8 row-gap-10 lg:grid-cols-2">
@@ -37,11 +37,9 @@ export default function Merit() {
               </svg>
             </div>
             <h6 className="mb-3 text-3xl font-bold text-gray-100">
-            {t('feature1_title')} 
+              {t("feature1_title")}
             </h6>
-            <p className="mb-3 text-base text-gray-200">
-            {t('feature1_text')}
-            </p>
+            <p className="mb-3 text-base text-gray-200">{t("feature1_text")}</p>
           </div>
           <div className="max-w-md sm:mx-auto sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full sm:mx-auto sm:w-24 sm:h-24">
@@ -61,9 +59,9 @@ export default function Merit() {
               </svg>
             </div>
             <h6 className="mb-3 text-3xl font-bold text-gray-100">
-            {t('feature2_title')} 
+              {t("feature2_title")}
             </h6>
-            <p className="mb-3 text-base text-gray-200">{t('feature2_text')}</p>
+            <p className="mb-3 text-base text-gray-200">{t("feature2_text")}</p>
           </div>
           <div className="max-w-md sm:mx-auto sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full sm:mx-auto sm:w-24 sm:h-24">
@@ -75,7 +73,6 @@ export default function Merit() {
                 stroke="currentColor"
                 strokeWidth="2"
               >
-                
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -84,11 +81,9 @@ export default function Merit() {
               </svg>
             </div>
             <h6 className="mb-3 text-3xl font-bold leading-5 text-gray-100">
-            {t('feature3_title')} 
+              {t("feature3_title")}
             </h6>
-            <p className="mb-3 text-base text-gray-200">
-            {t('feature3_text')}
-            </p>
+            <p className="mb-3 text-base text-gray-200">{t("feature3_text")}</p>
           </div>
           <div className="max-w-md sm:mx-auto sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full sm:mx-auto sm:w-24 sm:h-24">
@@ -98,25 +93,12 @@ export default function Merit() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="url(#grad1)"
-                
               >
                 <defs>
                   <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop
-                      offset="0%"
-                      stopColor="#b794f4"
-                      stopOpacity="1"
-                    />
-                    <stop
-                      offset="50%"
-                      stopColor="#ed64a6"
-                      stopOpacity="1"
-                    />
-                    <stop
-                      offset="100%"
-                      stopColor="#f64a49"
-                      stopOpacity="1"
-                    />
+                    <stop offset="0%" stopColor="#b794f4" stopOpacity="1" />
+                    <stop offset="50%" stopColor="#ed64a6" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#f64a49" stopOpacity="1" />
                   </linearGradient>
                 </defs>
                 <path
@@ -128,11 +110,9 @@ export default function Merit() {
               </svg>
             </div>
             <h6 className="mb-3 text-3xl font-bold leading-5 text-gray-100">
-            {t('feature4_title')} 
+              {t("feature4_title")}
             </h6>
-            <p className="mb-3 text-base text-gray-200">
-            {t('feature4_text')}
-            </p>
+            <p className="mb-3 text-base text-gray-200">{t("feature4_text")}</p>
           </div>
         </div>
       </div>

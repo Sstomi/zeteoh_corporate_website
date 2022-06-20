@@ -1,6 +1,9 @@
 {
-    "team_title": "Core Team",
-    "team_yann": "リギリ　ヤン",
-    "team_satomi": "リギリ　聡美",
-    "team_adrien": "カルペンティエ　アドリアン"
+  "team_title": "Core Team",
+  "team_yann": "リギリ　ヤン",
+  "team_satomi": "リギリ　聡美",
+  "team_adrien": "カルペンティエ　アドリアン",
+  "yann_title": "Co-founder & CEO/CTO",
+  "satomi_title": "Co-founder & COO",
+  "adrien_title": "Data Scientist"
 }
