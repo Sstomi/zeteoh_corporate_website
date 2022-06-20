@@ -97,7 +97,7 @@ export default function Footer() {
               <a>
                 <Image
                   className="rounded "
-                  src="/images/Home/kana-logo.png" // Route of the image file
+                  src="/images/Home/zeteoh_kana_logo.png" // Route of the image file
                   height={39} // Desired size with correct aspect ratio
                   width={138} // Desired size with correct aspect ratio
                   alt="zeteoh-logo"

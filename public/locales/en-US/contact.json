@@ -1,9 +1,12 @@
 {
-    "contact_title": "Contact",
-    "contact_text": "Want to get in touch? We would love to hear from you.",
-    "contact_name": "Name",
-    "contact_company": "Company",
-    "contact_email": "Email",
-    "contact_message": "Message",
-    "contact_submit": "Send"
+  "contact_title": "Contact",
+  "contact_text": "Want to get in touch? We would love to hear from you.",
+  "contact_name": "Name",
+  "contact_company": "Company",
+  "contact_email": "Email",
+  "contact_message": "Message",
+  "contact_submit": "Send",
+  "contact_placeholder_name": "Your Name",
+  "contact_placeholder_company": "ACME, Inc.",
+  "contact_placeholder_email": "john@example.com"
 }
