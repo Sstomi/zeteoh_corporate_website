@@ -17,7 +17,7 @@ export default function Team() {
             <div className="relative mb-4">
               <Image
                 className="grayscale"
-                src="/images/Company/Yann-square.jpg" // Route of the image file
+                src="/images/Company/yann_square.jpg" // Route of the image file
                 height={852} // Desired size with correct aspect ratio
                 width={852} // Desired size with correct aspect ratio
                 alt="Yann"
@@ -70,7 +70,7 @@ export default function Team() {
             <div className="relative mb-4 rounded">
               <Image
                 className="grayscale"
-                src="/images/Company/satomi-square.jpg" // Route of the image file
+                src="/images/Company/satomi_square.jpg" // Route of the image file
                 height={852} // Desired size with correct aspect ratio
                 width={852} // Desired size with correct aspect ratio
                 alt="Satomi"
@@ -125,7 +125,7 @@ export default function Team() {
             <div className="relative mb-4 rounded">
               <Image
                 className="grayscale"
-                src="/images/Company/Adrien-square.jpg" // Route of the image file
+                src="/images/Company/adrien_square.jpg" // Route of the image file
                 height={852} // Desired size with correct aspect ratio
                 width={852} // Desired size with correct aspect ratio
                 alt="Adrien"
