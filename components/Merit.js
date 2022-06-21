@@ -39,7 +39,7 @@ export default function Merit() {
           </div>
           <div className="max-w-md sm:mx-auto sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full sm:mx-auto sm:w-24 sm:h-24">
-            <p className="text-7xl">🤝</p>
+              <p className="text-7xl">🤝</p>
             </div>
             <h6 className="mb-3 text-3xl font-bold leading-5 text-gray-100">
               {t("feature3_title")}
@@ -48,7 +48,7 @@ export default function Merit() {
           </div>
           <div className="max-w-md sm:mx-auto sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full sm:mx-auto sm:w-24 sm:h-24">
-            <p className="text-7xl">👩🏽‍💻</p>
+              <p className="text-7xl">👩🏽‍💻</p>
             </div>
             <h6 className="mb-3 text-3xl font-bold leading-5 text-gray-100">
               {t("feature4_title")}

@@ -17,7 +17,7 @@ export default function Team() {
             <div className="relative mb-4">
               <Image
                 className="grayscale"
-                src="/images/Company/Yann-square.jpg" // Route of the image file
+                src="/images/Company/yann_square.jpg" // Route of the image file
                 height={852} // Desired size with correct aspect ratio
                 width={852} // Desired size with correct aspect ratio
                 alt="Yann"
@@ -70,7 +70,7 @@ export default function Team() {
             <div className="relative mb-4 rounded">
               <Image
                 className="grayscale"
-                src="/images/Company/satomi-square.jpg" // Route of the image file
+                src="/images/Company/satomi_square.jpg" // Route of the image file
                 height={852} // Desired size with correct aspect ratio
                 width={852} // Desired size with correct aspect ratio
                 alt="Satomi"
@@ -78,7 +78,9 @@ export default function Team() {
             </div>
             <div className="flex flex-col text-center">
               <p className="text-xl font-bold">{t("team_satomi")}</p>
-              <p className="mb-5 text-base text-gray-800">{t("satomi_title")}</p>
+              <p className="mb-5 text-base text-gray-800">
+                {t("satomi_title")}
+              </p>
               <div className="flex items-center space-x-3 justify-center">
                 <a
                   href="https://twitter.com/Satomi48650478"
@@ -123,7 +125,7 @@ export default function Team() {
             <div className="relative mb-4 rounded">
               <Image
                 className="grayscale"
-                src="/images/Company/Adrien-square.jpg" // Route of the image file
+                src="/images/Company/adrien_square.jpg" // Route of the image file
                 height={852} // Desired size with correct aspect ratio
                 width={852} // Desired size with correct aspect ratio
                 alt="Adrien"
@@ -131,7 +133,9 @@ export default function Team() {
             </div>
             <div className="flex flex-col text-center">
               <p className="text-xl font-bold">{t("team_adrien")}</p>
-              <p className="mb-5 text-base text-gray-800">{t("adrien_title")}</p>
+              <p className="mb-5 text-base text-gray-800">
+                {t("adrien_title")}
+              </p>
               <div className="flex items-center space-x-3 justify-center">
                 <a
                   href="https://www.linkedin.com/in/carpentier-adrien/"
