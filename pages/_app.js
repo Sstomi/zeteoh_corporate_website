@@ -22,7 +22,7 @@ const MyApp = ({ Component, pageProps }) => {
       </div>
       <Component {...pageProps} />
     </>
-  );
+  )
 };
 
 export default appWithTranslation(MyApp);
