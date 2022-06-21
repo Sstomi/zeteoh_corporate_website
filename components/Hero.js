@@ -12,7 +12,7 @@ export default function Hero() {
               {t("main-title")}
             </h1>
             <p className="pt-8 font-bold text-2xl text-gray-100">
-              AIとウェアラブル端末で身体活動を検知する
+              AIを使ってウェアラブルで身体活動を検知する
             </p>
             <p className="pt-8 font-bold text-base text-gray-100 md:text-lg">
               {t("introduction")}
