@@ -123,7 +123,9 @@ export default function Footer() {
             <h6 className="text-gray-100 uppercase font-semibold mb-4 flex justify-center md:justify-start">
               {t("contact")}
             </h6>
-            <p className="text-gray-100 flex items-center justify-center md:justify-start">ADDRESS:</p>
+            <p className="text-gray-100 flex items-center justify-center md:justify-start">
+              ADDRESS:
+            </p>
             <p className="text-gray-100 flex items-center justify-center md:justify-start mb-4">
               {t("address")}
             </p>

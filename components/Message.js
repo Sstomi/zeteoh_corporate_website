@@ -17,10 +17,10 @@ export default function Message() {
           </div>
         </div>
         <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-        {t("thanks-title")}
+          {t("thanks-title")}
         </h2>
         <p className="text-base text-gray-700 md:text-lg sm:px-4">
-        {t("thanks-message")}
+          {t("thanks-message")}
         </p>
         <hr className="w-full my-8 border-gray-300" />
         <Link href="/">
