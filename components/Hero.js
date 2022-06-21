@@ -11,6 +11,9 @@ export default function Hero() {
             <h1 className="max-w-xl mb-6 text-5xl font-bold leading-none tracking-tight text-gray-100 sm:text-7xl md:mx-auto">
               {t("main-title")}
             </h1>
+            <p className="pt-8 font-bold text-2xl text-gray-100">
+              AIとウェアラブル端末で身体活動を検知する
+            </p>
             <p className="pt-8 font-bold text-base text-gray-100 md:text-lg">
               {t("introduction")}
             </p>
