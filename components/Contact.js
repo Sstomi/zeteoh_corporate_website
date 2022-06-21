@@ -37,7 +37,7 @@ export default function Contact() {
       className="container px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
       method="POST"
       name="contact-form"
-      action="thank"
+      action="thanks"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
