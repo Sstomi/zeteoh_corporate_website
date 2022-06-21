@@ -19,6 +19,7 @@ module.exports = {
       backgroundImage: {
         "hero-background": "url('/images/Home/diagonal-lines.svg')",
         "team-background": "url('/images/Home/bg.svg')",
+        "Footer-image": "url('/images/Footer/footer-map.png')",
       },
     },
   },

@@ -6,7 +6,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Navbar from "../components/Navbar";
 import Message from "../components/Message";
-
 import Footer from "../components/Footer";
 
 const Thanks = () => {
@@ -14,7 +13,7 @@ const Thanks = () => {
   const { t } = useTranslation("common");
 
   return (
-    <div>
+    <div className="">
       <main>
         <Navbar />
         <Message />
@@ -26,7 +25,7 @@ const Thanks = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common", "hero"])),
+    ...(await serverSideTranslations(locale, ["common", "hero", "footer","message",])),
   },
 });
 
