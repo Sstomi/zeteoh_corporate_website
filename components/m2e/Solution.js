@@ -16,43 +16,36 @@ export default function Solution() {
           </span>{" "}
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-          スマートフォンで複数の身体活動を検知（歩く・走る・自転車・階段昇り降り）します。
-          スマートフォンシェイクなどのチート行為も自動検知します。
-          zeteohRISEだけで、歩数計やGPSに頼らずに身体活動を検知できる。
+          We support your business and enable you to strive in the M2E market.
         </p>
       </div>
       <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
         <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">コストを削減できる</h6>
+            <h6 className="mb-2 font-semibold leading-5">Advanced Anti-Cheats</h6>
             <p className="text-sm text-gray-900">
-              zeteohPLAYはチート行為を検知するので、チート行為を防ぐための開発コストを削減します。
+              We use our expertise and Ai models to prevent and detect cheaters.
             </p>
-          </div>
-        </div>
-        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">一つのツールで完結</h6>
-            <p className="text-sm text-gray-900">
-              zeteohPLAYを実装するだけで、プレイヤーのスマートフォンが複数の身体活動を検知。チート行為も検知します。
-            </p>
-          </div>
-        </div>
-        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">実装が簡単</h6>
-            <p className="text-sm text-gray-900">ゲームエンジン</p>
           </div>
         </div>
         <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">Privacy by design</h6>
             <p className="text-sm text-gray-900">
-              モーションセンサーデータを使用しているので、センシティブではない
+              We enable you to detect physical activities without the GPS. This means no privacy issues anymore and a better user experience for your app.
             </p>
           </div>
         </div>
+        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
+          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+            <h6 className="mb-2 font-semibold leading-5">More activities</h6>
+            <p className="text-sm text-gray-900">Add more activities to your app to reach more users in the world.</p>
+          </div>
+        </div>
       </div>
+      ========== Explanation about how it's easy to start with a clear plan about how they will implement it and button to top down about contact<br></br>
+      ========== The result with our solution and without<br></br>
+      ========== contact specific componenent for this page<br></br>
     </div>
   );
 }

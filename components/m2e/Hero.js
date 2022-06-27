@@ -10,12 +10,11 @@ export default function Hero() {
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-6xl md:mx-auto">
                 <span className="relative inline-block">
-                  zeteohRISE<br></br>for Move to Earn
+                  Save development costs for your <br></br>Move to Earn app
                 </span>{" "}
               </h2>
               <p className="text-base text-indigo-100 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque rem aperiam, eaque ipsa quae.
+                We help M2E businesses reducing their development and operation costs with our solution zeteohRISE.
               </p>
             </div>
           </div>

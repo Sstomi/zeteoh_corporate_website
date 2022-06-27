@@ -37,7 +37,7 @@ export default function Hero() {
                 {t("web3.0")}
               </p>
               <br></br>
-              <Link href="m2e">
+              <Link href="move-to-earn">
                 <a className="font-semibold text-gray-200 hover:text-primary-color">
                   👉check information
                 </a>
