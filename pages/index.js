@@ -8,11 +8,11 @@ import Merit from "../components/Merit";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { getSortedPostData } from "../lib/posts";
+import { getSortedPostsData } from "../lib/posts";
 import News from "../components/News";
 
 export async function getStaticProps({ locale }) {
-  const allPostData = getSortedPostData();
+  const allPostData = getSortedPostsData();
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -27,7 +27,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-const Homepage = ({allPostData}) => {
+const Homepage = ({ allPostData }) => {
   const router = useRouter();
   return (
     <div>
@@ -81,7 +81,5 @@ const Homepage = ({allPostData}) => {
     </div>
   );
 };
-
-
 
 export default Homepage;

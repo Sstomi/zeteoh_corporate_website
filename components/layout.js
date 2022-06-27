@@ -10,7 +10,7 @@ export default function Layout({ children, home }) {
   return (
     <div className="bg-gray-100">
       <div className="pt-8">
-        <div >
+        <div>
           <Head>
             <link rel="icon" href="/favicon.ico" />
             <meta
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
           </Head>
-          <header >
+          <header>
             {home ? (
               <>
                 <Image
@@ -48,7 +48,7 @@ export default function Layout({ children, home }) {
           </header>
           <main>{children}</main>
           {!home && (
-            <div >
+            <div>
               <Link href="/">
                 <a className="text-gray-900 font-ud hover:text-gray-600">
                   ← ホームへ戻る

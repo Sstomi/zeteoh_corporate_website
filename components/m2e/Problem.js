@@ -64,28 +64,32 @@ export default function Problem() {
       <div className="pt-12 max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h2 className="text-center max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
-            Additionally, technology had its limitations to detect physical activities.
+            Additionally, technology had its limitations to detect physical
+            activities.
           </span>
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-        The following technolofies are mainly used in M2E games for physical activity detection. However, these methods have these disadvantages.
+          The following technolofies are mainly used in M2E games for physical
+          activity detection. However, these methods have these disadvantages.
         </p>
         <p className="py-8 text-xl text-gray-900 md:text-3xl font-bold">
-        🛰️<span className="">GPS</span>
+          🛰️<span className="">GPS</span>
         </p>
         <p className="text-base text-gray-700 md:text-lg">
-        多くのアプリやゲームで身体活動検知に使われているGPSは、位置情報に測位した時間や属性データが紐づくと、個人特定に繋がるセンシティブなデータになります。GPSの使用が規制の対象となりゲーム内のトークンが1日で30%も下落した例もあります。
+          多くのアプリやゲームで身体活動検知に使われているGPSは、位置情報に測位した時間や属性データが紐づくと、個人特定に繋がるセンシティブなデータになります。GPSの使用が規制の対象となりゲーム内のトークンが1日で30%も下落した例もあります。
         </p>
         <p className="py-8 text-xl text-gray-900 md:text-3xl font-bold">
-        👟<span className="">Step counter</span>
+          👟<span className="">Step counter</span>
         </p>
         <p className="text-base text-gray-700 md:text-lg">
-        歩数計から得られるデータは、チートが簡単にできるので信頼性の低いデータとも言えます。
+          歩数計から得られるデータは、チートが簡単にできるので信頼性の低いデータとも言えます。
         </p>
         <br></br>
         <p className="text-base text-gray-700 md:text-lg">
-        これらの方法では、<br></br>・デバイスごとでデータの定義が異なり、プレイヤーに対して公平性を損なう。<br></br>
-        ・プレイヤーにとって良いユーザー体験を提供しているとは言えないことも挙げられます。
+          これらの方法では、<br></br>
+          ・デバイスごとでデータの定義が異なり、プレイヤーに対して公平性を損なう。
+          <br></br>
+          ・プレイヤーにとって良いユーザー体験を提供しているとは言えないことも挙げられます。
         </p>
       </div>
     </div>

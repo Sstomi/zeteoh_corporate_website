@@ -4,7 +4,7 @@ import Head from "next/head";
 import Date from "../../components/date";
 
 export async function getStaticProps({ params }) {
-  const postData = await getNPostData(params.id);
+  const postData = await getPostData(params.id);
   return {
     props: {
       postData,
@@ -28,10 +28,10 @@ export default function Post({ postData }) {
       </Head>
       <article>
         <span className="font-noto text-gray-900">
-          <h1 >{postData.title}</h1>
+          <h1>{postData.title}</h1>
         </span>
         <div className="py-4">
-          <div >
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 inline-block"

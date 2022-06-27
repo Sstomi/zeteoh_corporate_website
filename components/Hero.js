@@ -33,7 +33,9 @@ export default function Hero() {
               </p>
             </div>
             <div className="px-10 py-20 text-center transition duration-300 transform bg-zinc-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-              <p className="text-xl font-semibold text-gray-200">{t("web3.0")}</p>
+              <p className="text-xl font-semibold text-gray-200">
+                {t("web3.0")}
+              </p>
               <br></br>
               <Link href="m2e">
                 <a className="font-semibold text-gray-200 hover:text-primary-color">

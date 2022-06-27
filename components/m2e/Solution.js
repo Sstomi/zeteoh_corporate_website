@@ -14,7 +14,6 @@ export default function Solution() {
           <span className="relative inline-block">
             <span className="relative">zeteohRISE</span>
           </span>{" "}
-          
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
           スマートフォンで複数の身体活動を検知（歩く・走る・自転車・階段昇り降り）します。
@@ -41,19 +40,15 @@ export default function Solution() {
         </div>
         <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">
-            実装が簡単
-            </h6>
-            <p className="text-sm text-gray-900">
-              ゲームエンジン
-            </p>
+            <h6 className="mb-2 font-semibold leading-5">実装が簡単</h6>
+            <p className="text-sm text-gray-900">ゲームエンジン</p>
           </div>
         </div>
         <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">Privacy by design</h6>
             <p className="text-sm text-gray-900">
-            モーションセンサーデータを使用しているので、センシティブではない
+              モーションセンサーデータを使用しているので、センシティブではない
             </p>
           </div>
         </div>

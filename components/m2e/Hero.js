@@ -1,6 +1,5 @@
 import { useTranslation } from "next-i18next";
 
-
 export default function Hero() {
   const { t } = useTranslation("m2e-hero");
   return (
@@ -11,7 +10,7 @@ export default function Hero() {
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-6xl md:mx-auto">
                 <span className="relative inline-block">
-                zeteohRISE<br></br>for Move to Earn
+                  zeteohRISE<br></br>for Move to Earn
                 </span>{" "}
               </h2>
               <p className="text-base text-indigo-100 md:text-lg">
