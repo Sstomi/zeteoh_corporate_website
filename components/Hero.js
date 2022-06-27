@@ -12,7 +12,7 @@ export default function Hero() {
               {t("main-title")}
             </h1>
             <p className="pt-8 font-bold text-2xl text-gray-100">
-            {t("ja_tagline")}
+              {t("ja_tagline")}
             </p>
             <p className="pt-8 font-bold text-base text-gray-100 md:text-lg">
               {t("introduction")}
@@ -33,11 +33,13 @@ export default function Hero() {
               </p>
             </div>
             <div className="px-10 py-20 text-center transition duration-300 transform bg-zinc-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-              <p className="font-semibold text-gray-200">{t("web3.0")}</p>
+              <p className="text-xl font-semibold text-gray-200">{t("web3.0")}</p>
               <br></br>
-              <p className="font-semibold text-gray-200 hover:text-primary-color">
-                Coming soon
-              </p>
+              <Link href="m2e">
+                <a className="font-semibold text-gray-200 hover:text-primary-color">
+                  👉check information
+                </a>
+              </Link>
             </div>
             <div className="px-10 py-20 text-center transition duration-300 transform bg-zinc-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <p className="font-semibold text-gray-200">{t("wellbeing")}</p>

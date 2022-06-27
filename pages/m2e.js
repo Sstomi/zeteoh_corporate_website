@@ -3,31 +3,13 @@ import { NextSeo } from "next-seo";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Merit from "../components/Merit";
-import Team from "../components/Team";
+import Hero from "../components/m2e/Hero";
+import Problem from "../components/m2e/Problem";
+import Solution from "../components/m2e/Solution";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { getSortedPostData } from "../lib/posts";
-import News from "../components/News";
 
-export async function getStaticProps({ locale }) {
-  const allPostData = getSortedPostData();
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        "hero",
-        "merit",
-        "team",
-        "contact",
-        "footer",
-      ])),
-      allPostData,
-    },
-  };
-}
-
-const Homepage = ({allPostData}) => {
+const Homepage = () => {
   const router = useRouter();
   return (
     <div>
@@ -72,16 +54,25 @@ const Homepage = ({allPostData}) => {
       <main>
         <Navbar />
         <Hero />
-        <Merit />
-        <Team />
+        <Problem />
+        <Solution />
         <Contact />
-        <News allPostData={allPostData} />
       </main>
       <Footer />
     </div>
   );
 };
 
-
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, [
+      "m2e-hero",
+      "problem",
+      "m2e-solution",
+      "contact",
+      "footer",
+    ])),
+  },
+});
 
 export default Homepage;
