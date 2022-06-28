@@ -9,7 +9,7 @@ import Team from "../components/Team";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { getSortedPostsData } from "../lib/posts";
-import News from "../components/News";
+// import News from "../components/News";
 
 export async function getStaticProps({ locale }) {
   const allPostData = getSortedPostsData();
@@ -75,7 +75,7 @@ const Homepage = ({ allPostData }) => {
         <Merit />
         <Team />
         <Contact />
-        <News allPostData={allPostData} />
+        {/* <News allPostData={allPostData} /> */}
       </main>
       <Footer />
     </div>
