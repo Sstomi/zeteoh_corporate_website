@@ -67,7 +67,7 @@ export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, [
       "m2e-hero",
-      "problem",
+      "m2e-problem",
       "m2e-solution",
       "contact",
       "footer",
