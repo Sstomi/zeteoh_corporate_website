@@ -15,31 +15,37 @@ export default function Solution() {
             <span className="relative">zeteohRISE</span>
           </span>{" "}
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
-        {t("title_text")}
-        </p>
+        <p className="text-base text-gray-700 md:text-lg">{t("title_text")}</p>
       </div>
       <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 sm:grid-cols-2">
         <div className="duration-300 transform bg-white border-l-4 border-primary-color hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5 text-2xl">{t("solution_title1")}</h6>
+            <h6 className="mb-2 font-semibold leading-5 text-2xl">
+              {t("solution_title1")}
+            </h6>
             <p className="pt-3 text-base text-gray-900">
-            {t("solution_text1")}       
+              {t("solution_text1")}
             </p>
           </div>
         </div>
         <div className="duration-300 transform bg-white border-l-4 border-primary-color hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5 text-2xl">{t("solution_title2")}</h6>
+            <h6 className="mb-2 font-semibold leading-5 text-2xl">
+              {t("solution_title2")}
+            </h6>
             <p className="pt-3 text-base text-gray-900">
-            {t("solution_text2")} 
+              {t("solution_text2")}
             </p>
           </div>
         </div>
         <div className="duration-300 transform bg-white border-l-4 border-primary-color hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5 text-2xl">{t("solution_title3")}</h6>
-            <p className="pt-3 text-base text-gray-900">{t("solution_text3")}</p>
+            <h6 className="mb-2 font-semibold leading-5 text-2xl">
+              {t("solution_title3")}
+            </h6>
+            <p className="pt-3 text-base text-gray-900">
+              {t("solution_text3")}
+            </p>
           </div>
         </div>
       </div>
