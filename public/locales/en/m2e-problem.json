@@ -1,10 +1,10 @@
 {
-   "title" : "Developing and operating an M2E app is complex and involves physical activitiy detection, privacy concerns and strong anti-cheating solutions.",
-   "title_text1": "This can represent more than half of your development costs.",
-   "problem_title1": "Cheating",
-   "problem_text1": " Cheaters are a threat for your business. And developing anti-cheat solutions requires a very specific expertise and a lot of resources.",
-   "problem_title2": "Privacy",
-   "problem_text2": " Geolocation solutions like the GPS to track users' physical activities are easy to implement but bring a lot of privacy and regulatory concerns.",
-   "problem_title3": "Usability",
-   "problem_text3": "Geolocation solutions consume a lot of battery and forces a lot of your users' to exercise with their smartphone and an additional battery."
+  "title": "Developing and operating an M2E app is complex and involves physical activitiy detection, privacy concerns and strong anti-cheating solutions.",
+  "title_text1": "This can represent more than half of your development costs.",
+  "problem_title1": "Cheating",
+  "problem_text1": " Cheaters are a threat for your business. And developing anti-cheat solutions requires a very specific expertise and a lot of resources.",
+  "problem_title2": "Privacy",
+  "problem_text2": " Geolocation solutions like the GPS to track users' physical activities are easy to implement but bring a lot of privacy and regulatory concerns.",
+  "problem_title3": "Usability",
+  "problem_text3": "Geolocation solutions consume a lot of battery and forces a lot of your users' to exercise with their smartphone and an additional battery."
 }
