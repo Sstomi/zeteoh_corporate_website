@@ -14,7 +14,8 @@ export default function Hero() {
                 </span>{" "}
               </h2>
               <p className="text-base text-indigo-100 md:text-lg">
-                We help M2E businesses reducing their development and operation costs with our solution zeteohRISE.
+                We help M2E businesses reducing their development and operation
+                costs with our solution zeteohRISE.
               </p>
             </div>
           </div>

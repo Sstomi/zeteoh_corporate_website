@@ -22,7 +22,9 @@ export default function Solution() {
       <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
         <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">Advanced Anti-Cheats</h6>
+            <h6 className="mb-2 font-semibold leading-5">
+              Advanced Anti-Cheats
+            </h6>
             <p className="text-sm text-gray-900">
               We use our expertise and Ai models to prevent and detect cheaters.
             </p>
@@ -32,18 +34,24 @@ export default function Solution() {
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">Privacy by design</h6>
             <p className="text-sm text-gray-900">
-              We enable you to detect physical activities without the GPS. This means no privacy issues anymore and a better user experience for your app.
+              We enable you to detect physical activities without the GPS. This
+              means no privacy issues anymore and a better user experience for
+              your app.
             </p>
           </div>
         </div>
         <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">More activities</h6>
-            <p className="text-sm text-gray-900">Add more activities to your app to reach more users in the world.</p>
+            <p className="text-sm text-gray-900">
+              Add more activities to your app to reach more users in the world.
+            </p>
           </div>
         </div>
       </div>
-      ========== Explanation about how it's easy to start with a clear plan about how they will implement it and button to top down about contact<br></br>
+      ========== Explanation about how it's easy to start with a clear plan
+      about how they will implement it and button to top down about contact
+      <br></br>
       ========== The result with our solution and without<br></br>
       ========== contact specific componenent for this page<br></br>
     </div>

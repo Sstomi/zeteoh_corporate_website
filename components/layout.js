@@ -49,7 +49,7 @@ export default function Layout({ children, home }) {
           <main>{children}</main>
           {!home && (
             <div>
-              <Link href="/">
+              <Link href="/#last-news">
                 <a className="text-gray-900 font-ud hover:text-gray-600">
                   ← ホームへ戻る
                 </a>

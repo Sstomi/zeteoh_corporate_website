@@ -12,7 +12,9 @@ export default function Problem() {
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
-            Developing and operating an M2E app is complex and involves physical activitiy detection, privacy concerns and strong anti-cheating solutions.
+            Developing and operating an M2E app is complex and involves physical
+            activitiy detection, privacy concerns and strong anti-cheating
+            solutions.
           </span>
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
@@ -28,7 +30,8 @@ export default function Problem() {
             Cheating
           </p>
           <p className="max-w-xs mx-auto mb-2 text-gray-700 text-base">
-            Cheaters are a threat for your business. And developing anti-cheat solutions requires a very specific expertise and a lot of resources.
+            Cheaters are a threat for your business. And developing anti-cheat
+            solutions requires a very specific expertise and a lot of resources.
           </p>
         </div>
         <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
@@ -39,7 +42,9 @@ export default function Problem() {
             Privacy
           </p>
           <p className="max-w-xs mx-auto mb-2 text-gray-700">
-            Geolocation solutions like the GPS to track users' physical activities are easy to implement but bring a lot of privacy and regulatory concerns.
+            Geolocation solutions like the GPS to track users' physical
+            activities are easy to implement but bring a lot of privacy and
+            regulatory concerns.
           </p>
         </div>
         <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
@@ -52,7 +57,9 @@ export default function Problem() {
             <br></br>
           </p>
           <p className="max-w-xs mx-auto mb-2 text-gray-700">
-          Geolocation solutions consume a lot of battery and forces a lot of your users' to exercise with their smartphone and an additional battery.
+            Geolocation solutions consume a lot of battery and forces a lot of
+            your users' to exercise with their smartphone and an additional
+            battery.
           </p>
         </div>
       </div>

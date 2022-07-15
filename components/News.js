@@ -3,7 +3,7 @@ import Date from "./date";
 
 export default function News({ allPostData }) {
   return (
-    <div className="py-16 bg-gray-200">
+    <div className="py-16 bg-gray-200" id="last-news">
       <div className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
         <section>
           <div className="grid grid-cols-12">
@@ -14,7 +14,7 @@ export default function News({ allPostData }) {
               <ul>
                 {allPostData.slice(0, 3).map(({ id, date, title }) => (
                   <li key={id}>
-                    <Link href={`/posts/${id}`}>
+                    <Link href={`/posts/${id}`} locale="en">
                       <a className="">{title}</a>
                     </Link>
                     <br />
