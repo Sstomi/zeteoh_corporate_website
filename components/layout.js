@@ -1,21 +1,23 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const name = "ニュース";
-export const siteTitle = "ビーコア株式会社";
+export const siteTitle = "zeteoh株式会社";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-300 ">
       <div className="pt-8">
+      <Navbar />
         <div>
           <Head>
             <link rel="icon" href="/favicon.ico" />
             <meta
               name="description"
-              content="プレスリリース・イベント情報・その他のお知らせ"
+              content="プレスリリース・プロダクトに関するニュース・その他のお知らせ"
             />
             <meta
               property="og:image"
@@ -39,19 +41,15 @@ export default function Layout({ children, home }) {
                 <h1>{name}</h1>
               </>
             ) : (
-              <>
-                <h2>
-                  <span className="font-noto text-gray-900">ニュース</span>
-                </h2>
-              </>
+              <></>
             )}
           </header>
           <main>{children}</main>
           {!home && (
-            <div>
+            <div className="text-center pb-16">
               <Link href="/#last-news">
-                <a className="text-gray-900 font-ud hover:text-gray-600">
-                  ← ホームへ戻る
+                <a className="text-gray-900 hover:text-gray-600">
+                  👈 ホームへ戻る
                 </a>
               </Link>
             </div>
