@@ -9,17 +9,18 @@ export default function News({ allPostData }) {
           <div className="grid grid-cols-12">
             <div className="col-start-4 col-span-6">
               <h2>
-                <span className="">ニュース</span>
+                <span className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">News</span>
               </h2>
+              <hr className="w-full my-4 border-gray-300" />
               <ul>
                 {allPostData.slice(0, 3).map(({ id, date, title }) => (
                   <li key={id}>
                     <Link href={`/posts/${id}`} locale="en">
-                      <a className="">{title}</a>
+                      <a className="text-xl font-bold my-4">{title}</a>
                     </Link>
                     <br />
                     <small>
-                      <p className="">
+                      <p className="text-base mb-4">
                         <Date dateString={date} />
                       </p>
                     </small>
