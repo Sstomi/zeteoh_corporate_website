@@ -3,34 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useTranslation } from "next-i18next";
 
-const name = "ニュース";
+
+const name = "News";
 export const siteTitle = "zeteoh株式会社";
 
 export default function Layout({ children, home }) {
+const { t } = useTranslation("common");
+
   return (
     <div className="bg-gray-300 ">
-      <div className="pt-8">
-      <Navbar />
-        <div>
-          <Head>
-            <link rel="icon" href="/favicon.ico" />
-            <meta
-              name="description"
-              content="プレスリリース・プロダクトに関するニュース・その他のお知らせ"
-            />
-            <meta
-              property="og:image"
-              content={`https://og-image.vercel.app/${encodeURI(
-                siteTitle
-              )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-            />
-            <meta name="og:title" content={siteTitle} />
-            <meta name="twitter:card" content="summary_large_image" />
-          </Head>
+      <div className="">
+        <Navbar />
+        <div className="pt-24">
           <header>
             {home ? (
-              <>
+              <div className="text-center">
                 <Image
                   priority
                   src="/images/profile.png"
@@ -38,8 +27,8 @@ export default function Layout({ children, home }) {
                   width={144}
                   alt={name}
                 />
-                <h1>{name}</h1>
-              </>
+                <h1 className="text-2xl font-bold text-center">{name}</h1>
+              </div>
             ) : (
               <></>
             )}
@@ -47,9 +36,10 @@ export default function Layout({ children, home }) {
           <main>{children}</main>
           {!home && (
             <div className="text-center pb-16">
-              <Link href="/#last-news">
+              <Link href="/#">
                 <a className="text-gray-900 hover:text-gray-600">
-                  👈 ホームへ戻る
+                {t("back-to-news-list")}
+                  👈 ニュース一覧へ戻る
                 </a>
               </Link>
             </div>
