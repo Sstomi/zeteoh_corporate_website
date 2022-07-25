@@ -5,12 +5,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useTranslation } from "next-i18next";
 
-
 const name = "News";
 export const siteTitle = "zeteoh株式会社";
 
 export default function Layout({ children, home }) {
-const { t } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <div className="bg-gray-300 ">
@@ -38,7 +37,7 @@ const { t } = useTranslation("common");
             <div className="text-center pb-16">
               <Link href="/#">
                 <a className="text-gray-900 hover:text-gray-600">
-                {t("back-to-news-list")}
+                  {t("back-to-news-list")}
                   👈 ニュース一覧へ戻る
                 </a>
               </Link>

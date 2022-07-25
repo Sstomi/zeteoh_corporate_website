@@ -1,23 +1,16 @@
 import { useTranslation } from "next-i18next";
-import { getSortedNewsData } from "../lib/posts";
+import Link from "next/link";
 
-export async function getStaticProps({locale}) {
-  const allNewsData = getSortedNewsData();
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        "footer",
-      ])),
-      allNewsData,
-    },
-  };
+{
+  /*
+This component takes the news data `allNewsData` as input
+and creates a list of news with titles and dates.
+*/
 }
-
-
-export default function NewsList({allNewsData}) {
-  const { t } = useTranslation("newslist");
+export default function NewsList({ allNewsData }) {
+  const { t } = useTranslation("news-list");
   return (
-    <div className="">
+    <div className="px-4 py-16 mx-auto">
       <ul className="">
         {allNewsData.map(({ id, date, title }) => (
           <li className="" key={id}>
@@ -34,5 +27,3 @@ export default function NewsList({allNewsData}) {
     </div>
   );
 }
-
-export default NewsList;

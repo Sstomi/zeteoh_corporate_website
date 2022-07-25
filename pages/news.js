@@ -5,7 +5,33 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import NewsList from "../components/NewsList";
-const NewsPage = () => {
+import { getSortedPostsData } from "../lib/posts";
+
+{
+  /* 
+When nextjs build the website, this runs
+and will output the necessary data for the translation
+and the news data.
+*/
+}
+export async function getStaticProps({ locale }) {
+  const allNewsData = getSortedPostsData();
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["footer"])),
+      allNewsData,
+    },
+  };
+}
+
+{
+  /* 
+NewsPage will take the `allNewsData` created above
+by `getStaticProps` and send this to the component
+`NewsList`.
+*/
+}
+const NewsPage = ({ allNewsData }) => {
   const router = useRouter();
   return (
     <div>
@@ -49,19 +75,12 @@ const NewsPage = () => {
       </Head>
       <main>
         <Navbar />
-        <NewsList />
+        {/* We pass `allNewsData` to the component `NewsList` */}
+        <NewsList allNewsData={allNewsData} />
       </main>
       <Footer />
     </div>
   );
 };
-
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, [
-      "footer",
-    ])),
-  },
-});
 
 export default NewsPage;
