@@ -12,7 +12,7 @@ import { getSortedPostsData } from "../lib/posts";
 import News from "../components/News";
 
 export async function getStaticProps({ locale }) {
-  const allPostData = getSortedPostsData();
+  const allNewsData = getSortedPostsData();
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -22,12 +22,12 @@ export async function getStaticProps({ locale }) {
         "contact",
         "footer",
       ])),
-      allPostData,
+      allNewsData,
     },
   };
 }
 
-const Homepage = ({ allPostData }) => {
+const Homepage = ({ allNewsData }) => {
   const router = useRouter();
   return (
     <div>
@@ -75,7 +75,7 @@ const Homepage = ({ allPostData }) => {
         <Merit />
         <Team />
         <Contact />
-        <News allPostData={allPostData} />
+        <News allNewsData={allNewsData} />
       </main>
       <Footer />
     </div>
