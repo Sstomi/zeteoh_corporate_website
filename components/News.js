@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Date from "./date";
+import ConvertDate from "./ConvertDate";
 
 export default function News({ allNewsData }) {
   return (
@@ -23,7 +23,7 @@ export default function News({ allNewsData }) {
                     <br />
                     <small>
                       <p className="text-base mb-4">
-                        <Date dateString={date} />
+                        <ConvertDate dateString={date} />
                       </p>
                     </small>
                   </li>
