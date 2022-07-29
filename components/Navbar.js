@@ -6,7 +6,7 @@ import Image from "next/image";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <div className="">
       <nav className="fixed w-full z-10">
         <div className="w-full">
           <div className="flex items-center h-20 w-full">
@@ -26,11 +26,18 @@ function Navbar() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link href="/#contact-us">
-                    <a className="cursor-pointer bg-primary-color text-white px-3 py-2 rounded-md text-base font-medium hover:bg-black shadow-lg">
-                      CONTACT
+                  <Link href="/news">
+                    <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-medium">
+                      News
                     </a>
                   </Link>
+                  <div className="ml-10 flex items-baseline space-x-4">
+                    <Link href="/#contact-us">
+                      <a className="cursor-pointer bg-primary-color text-white px-3 py-2 rounded-md text-base font-medium hover:bg-black shadow-lg">
+                        CONTACT
+                      </a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -96,6 +103,11 @@ function Navbar() {
                 ref={ref}
                 className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
               >
+                <Link href="/news">
+                  <a className="cursor-pointer text-stone-800 hover:text-stone-400 block px-3 py-2 rounded-md text-base font-medium">
+                    NEWS
+                  </a>
+                </Link>
                 <Link href="/#contact-us">
                   <a className="cursor-pointer text-stone-800 hover:text-stone-400 block px-3 py-2 rounded-md text-base font-medium">
                     CONTACT
