@@ -1,9 +1,11 @@
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function Footer() {
   const { t } = useTranslation("footer");
+  const router = useRouter();
   return (
     <footer className="bg-Footer-image bg-center bg-no-repeat text-center lg:text-left bg-BG-color">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-500">

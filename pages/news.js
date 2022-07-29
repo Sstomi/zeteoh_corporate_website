@@ -2,32 +2,36 @@ import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Merit from "../components/Merit";
-import Team from "../components/Team";
-import Contact from "../components/Contact";
+import Navbar2 from "../components/Navbar2";
 import Footer from "../components/Footer";
+import NewsList from "../components/NewsList";
 import { getSortedPostsData } from "../lib/posts";
-import News from "../components/News";
 
+{
+  /* 
+When nextjs build the website, this runs
+and will output the necessary data for the translation
+and the news data.
+*/
+}
 export async function getStaticProps({ locale }) {
   const allNewsData = getSortedPostsData();
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        "hero",
-        "merit",
-        "team",
-        "contact",
-        "footer",
-      ])),
+      ...(await serverSideTranslations(locale, ["footer"])),
       allNewsData,
     },
   };
 }
 
-const Homepage = ({ allNewsData }) => {
+{
+  /* 
+NewsPage will take the `allNewsData` created above
+by `getStaticProps` and send this to the component
+`NewsList`.
+*/
+}
+const NewsPage = ({ allNewsData }) => {
   const router = useRouter();
   return (
     <div>
@@ -70,16 +74,13 @@ const Homepage = ({ allNewsData }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
-        <Navbar />
-        <Hero />
-        <Merit />
-        <Team />
-        <Contact />
-        <News allNewsData={allNewsData} />
+        <Navbar2 />
+        {/* We pass `allNewsData` to the component `NewsList` */}
+        <NewsList allNewsData={allNewsData} />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Homepage;
+export default NewsPage;
