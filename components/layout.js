@@ -15,7 +15,7 @@ export default function Layout({ children, home }) {
     <div className="bg-gray-300 ">
       <div className="">
         <Navbar />
-        <div className="pt-24">
+        <div className="">
           <header>
             {home ? (
               <div className="text-center">
@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
           <main>{children}</main>
           {!home && (
             <div className="text-center pb-16">
-              <Link href="/#">
+              <Link href="/news">
                 <a className="text-gray-900 hover:text-gray-600">
                   {t("back-to-news-list")}
                   👈 ニュース一覧へ戻る
