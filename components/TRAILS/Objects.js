@@ -30,7 +30,7 @@ export default function Objects() {
               <h6 className="text-xl mb-2 font-semibold leading-5 text-gray-100">
                 {t("object1-title")}
               </h6>
-              <ol class="list-disc mb-3 text-base text-gray-100">
+              <ol className="list-disc mb-3 text-base text-gray-100">
                 <li>{t("object1-list1")}</li>
                 <li>{t("object1-list2")}</li>
               </ol>
@@ -50,7 +50,7 @@ export default function Objects() {
               <h6 className="text-xl mb-2 font-semibold leading-5 text-gray-100">
                 {t("object2-title")}
               </h6>
-              <ol class="list-disc mb-3 text-base text-gray-100">
+              <ol className="list-disc mb-3 text-base text-gray-100">
                 <li>{t("object2-list1")}</li>
                 <li>{t("object2-list2")}</li>
               </ol>
@@ -70,7 +70,7 @@ export default function Objects() {
               <h6 className="text-xl mb-2 font-semibold leading-5 text-gray-100">
                 {t("object3-title")}
               </h6>
-              <ol class="list-disc mb-3 text-base text-gray-100">
+              <ol className="list-disc mb-3 text-base text-gray-100">
                 <li>{t("object3-list1")}</li>
                 <li>{t("object3-list2")}</li>
               </ol>
@@ -91,7 +91,7 @@ export default function Objects() {
             <h6 className="text-xl mb-2 font-semibold leading-5 text-gray-100">
               {t("object4-title")}
             </h6>
-            <ol class="list-disc mb-3 text-base text-gray-100">
+            <ol className="list-disc mb-3 text-base text-gray-100">
               <li>{t("object4-list1")}</li>
               <li>{t("object4-list2")}</li>
             </ol>
