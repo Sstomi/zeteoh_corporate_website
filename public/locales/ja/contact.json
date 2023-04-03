@@ -1,6 +1,7 @@
 {
   "contact_title": "お問い合わせ",
-  "contact_text": "お問い合わせはこちらのコンタクトフォームで承っております。",
+  "contact_text-1": "TRAILSは初期費用なしのサブスクリプションでご利用いただけます。詳細はお気軽にお問い合わせください。",
+  "contact_text-2": "また、協業開発のご相談などもこちらからお待ちしています。",
   "contact_name": "お名前",
   "contact_company": "会社名",
   "contact_email": "メールアドレス",

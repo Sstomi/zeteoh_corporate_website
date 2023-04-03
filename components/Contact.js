@@ -55,7 +55,7 @@ export default function Contact() {
             {t("contact_title")}
           </p>
           <p className="font-ud mt-2 pt-8 text-lg text-gray-600 md:text-center">
-            {t("contact_text")}
+            {t("contact_text-1")}<br></br>{t("contact_text-2")}
           </p>
           <div className="mt-8 grid grid-cols-1 md:grid md:grid-cols-8">
             <label className="pt-4 block md:col-start-3 col-span-4">

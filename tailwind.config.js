@@ -20,6 +20,8 @@ module.exports = {
         "hero-background": "url('/images/Home/diagonal-lines.svg')",
         "team-background": "url('/images/Home/bg.svg')",
         "Footer-image": "url('/images/Footer/footer-map.png')",
+        "particle-background": "url('/images/Background_particle.svg')",
+        "earth-background": "url('/images/earth_image.svg')",
       },
     },
   },

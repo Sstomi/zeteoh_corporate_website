@@ -9,7 +9,7 @@ export default function News({ allNewsData }) {
           <div className="grid grid-cols-12">
             <div className="col-start-4 col-span-6">
               <h2>
-                <span className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                <span className="pt-16 mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                   News
                 </span>
               </h2>
