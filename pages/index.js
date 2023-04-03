@@ -8,7 +8,6 @@ import Intro from "../components/TRAILS/Intro";
 import Overview from "../components/TRAILS/Overview";
 import Usecase from "../components/TRAILS/Usecase";
 import Objects from "../components/TRAILS/Objects";
-import Blog from "../components/TRAILS/Blog";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { getSortedPostsData } from "../lib/posts";
