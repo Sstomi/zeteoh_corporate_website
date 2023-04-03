@@ -81,7 +81,7 @@ const Homepage = ({ allNewsData }) => {
         <Overview />
         <Usecase />
         <Objects />
-       
+
         <Contact />
         <News allNewsData={allNewsData} />
       </main>

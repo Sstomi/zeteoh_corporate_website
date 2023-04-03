@@ -13,7 +13,7 @@ export default function Overview() {
             </p>
           </div>
           <h2 className="max-w-2xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-100 sm:text-5xl md:mx-auto">
-          {t("overview-title")}
+            {t("overview-title")}
           </h2>
           <Image
             className=""
@@ -24,31 +24,24 @@ export default function Overview() {
           />
         </div>
         <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 sm:grid-cols-2">
-          <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
-          </div>
+          <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex"></div>
           <div className="p-5 duration-300 transform bg-gray-300 border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-between mb-2">
               <p className="text-xl font-bold leading-5">{t("step-1")}</p>
             </div>
-            <p className="text-base text-gray-900">
-            {t("step-1-content")}
-            </p>
+            <p className="text-base text-gray-900">{t("step-1-content")}</p>
           </div>
           <div className="p-5 duration-300 transform bg-gray-300 border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-between mb-2">
               <p className="text-lg font-bold leading-5">{t("step-2")}</p>
             </div>
-            <p className="text-base text-gray-900">
-            {t("step-2-content")}
-            </p>
+            <p className="text-base text-gray-900">{t("step-2-content")}</p>
           </div>
           <div className="p-5 duration-300 transform bg-gray-300 border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-between mb-2">
               <p className="text-lg font-bold leading-5">{t("step-3")}</p>
             </div>
-            <p className="text-base text-gray-900">
-            {t("step-3-content")}
-            </p>
+            <p className="text-base text-gray-900">{t("step-3-content")}</p>
           </div>
         </div>
       </div>

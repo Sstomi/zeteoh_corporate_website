@@ -13,16 +13,16 @@ export default function Hero_company() {
                 Elevate human potential with the power of AI.
               </h2>
               <p className="pb-4 text-xl font-bold text-gray-100 md:text-2xl">
-              {t("sub-title-1")}
+                {t("sub-title-1")}
               </p>
               <p className="pb-8 text-lg text-gray-100 md:text-lg">
-              {t("sub-content-1")}
+                {t("sub-content-1")}
               </p>
               <p className="pb-4 text-xl font-bold text-gray-100 md:text-2xl">
-              {t("sub-title-2")}
+                {t("sub-title-2")}
               </p>
               <p className="pb-8 text-lg text-gray-100 md:text-lg">
-              {t("sub-content-2")}
+                {t("sub-content-2")}
               </p>
             </div>
           </div>

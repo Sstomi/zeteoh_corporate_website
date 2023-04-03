@@ -9,11 +9,9 @@ export default function Usecase() {
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-3xl md:mb-6">
           <h2 className="max-w-2xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-100 sm:text-5xl md:mx-auto">
-          {t("usecase-title")}
+            {t("usecase-title")}
           </h2>
-          <p className="text-base text-gray-100">
-          {t("usecase-sub")}
-          </p>
+          <p className="text-base text-gray-100">{t("usecase-sub")}</p>
         </div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">

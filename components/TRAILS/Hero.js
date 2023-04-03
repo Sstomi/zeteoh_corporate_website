@@ -2,8 +2,6 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
 
-
-
 export default function Hero() {
   const { t } = useTranslation("hero_TRAILS");
   return (
@@ -13,8 +11,10 @@ export default function Hero() {
           <div className="max-w-7xl mb-6">
             <h1 className="max-w-2xl mb-6 font-sans text-4xl font-bold leading-none text-white sm:text-6xl md:mx-auto">
               {t("main-title-1")}
-              <br></br>{t("main-title-2")}
-              <br></br>{t("main-title-3")}
+              <br></br>
+              {t("main-title-2")}
+              <br></br>
+              {t("main-title-3")}
             </h1>
             <p className="text-base text-gray-100 md:text-lg">
               {t("sub-1")}
@@ -25,14 +25,10 @@ export default function Hero() {
             </p>
           </div>
           <div className="flex items-center">
-            <a
-              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary-color hover:bg-Secondary-color focus:shadow-outline focus:outline-none"
-            >
+            <a className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary-color hover:bg-Secondary-color focus:shadow-outline focus:outline-none">
               {t("button_meeting")}
             </a>
-            <a
-              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-primary-color transition duration-200 rounded shadow-md bg-white hover:bg-Secondary-color focus:shadow-outline focus:outline-none"
-            >
+            <a className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-primary-color transition duration-200 rounded shadow-md bg-white hover:bg-Secondary-color focus:shadow-outline focus:outline-none">
               {t("button_contact")}
             </a>
           </div>
