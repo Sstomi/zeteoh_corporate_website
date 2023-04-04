@@ -28,9 +28,11 @@ export default function Hero() {
             <a className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary-color hover:bg-Secondary-color focus:shadow-outline focus:outline-none">
               {t("button_meeting")}
             </a>
+            <Link href="/#contact-us">
             <a className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-primary-color transition duration-200 rounded shadow-md bg-white hover:bg-Secondary-color focus:shadow-outline focus:outline-none">
               {t("button_contact")}
             </a>
+            </Link>
           </div>
         </div>
         <div className="lg:pt-8">
