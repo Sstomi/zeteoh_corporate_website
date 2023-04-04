@@ -1,0 +1,8 @@
+{
+  "intro-title": "What is TRAILS",
+  "intro-content": "TRAILS was originally developed for first responders, with a focus on robustness and ease of deployment. The wearable device, equipped with sensors, as well as an AI engine, detects the user’s location and sends it to the cloud via an API. The collected information is then displayed on a dashboard, making it easily accessible. This innovative architecture ensures that the system is virtually immune to interference issues, while significantly simplifying the setup process. (Patent pending.)",
+  "feature-1": "No Beacon Required",
+  "feature-1-content": "TRAILS doesn't require beacons for positioning. It uses wearable devices with an AI engine for accurate location tracking.",
+  "feature-2": "Seamless",
+  "feature-2-content": "TRAILS eliminates the need to extend the beacon mesh beyond the building by providing a seamless indoor/outdoor location ability."
+}

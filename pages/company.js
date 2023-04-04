@@ -3,11 +3,8 @@ import { NextSeo } from "next-seo";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Hero from "../components/TRAILS/Hero";
-import Intro from "../components/TRAILS/Intro";
-import Overview from "../components/TRAILS/Overview";
-import Usecase from "../components/TRAILS/Usecase";
-import Objects from "../components/TRAILS/Objects";
+import Hero_company from "../components/COMPANY/Hero_company";
+import Team from "../components/Team";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { getSortedPostsData } from "../lib/posts";
@@ -18,12 +15,8 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [
-        "hero_TRAILS",
-        "intro",
-        "overview",
-        "usecase",
-        "objects",
-        "blog",
+        "hero_company",
+        "team",
         "contact",
         "footer",
       ])),
@@ -32,7 +25,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-const Homepage = ({ allNewsData }) => {
+const Companypage = ({ allNewsData }) => {
   const router = useRouter();
   return (
     <div>
@@ -76,12 +69,8 @@ const Homepage = ({ allNewsData }) => {
       </Head>
       <main>
         <Navbar />
-        <Hero />
-        <Intro />
-        <Overview />
-        <Usecase />
-        <Objects />
-
+        <Hero_company />
+        <Team />
         <Contact />
         <News allNewsData={allNewsData} />
       </main>
@@ -90,4 +79,4 @@ const Homepage = ({ allNewsData }) => {
   );
 };
 
-export default Homepage;
+export default Companypage;

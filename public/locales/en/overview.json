@@ -1,0 +1,9 @@
+{
+  "overview-title": "TRAILS System",
+  "step-1": "AI Engine × Wearable Devices",
+  "step-1-content": "Wearable devices equipped with an AI engine process sensor data.",
+  "step-2": "API",
+  "step-2-content": "Location information is sent to the cloud, and users can access it via an application connected to the API.",
+  "step-3": "Dashboard",
+  "step-3-content": "Real-time location information of each user can be shared and viewed."
+}
