@@ -17,12 +17,13 @@
     "next-i18next": "^11.0.0",
     "next-seo": "^5.4.0",
     "nextjs-google-analytics": "^1.2.1",
-    "particles.js": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-particles": "^2.9.3",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "sharp": "^0.30.6"
+    "sharp": "^0.30.6",
+    "tsparticles": "^2.9.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",

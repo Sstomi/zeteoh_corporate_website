@@ -34,6 +34,7 @@ export async function getStaticProps({ locale }) {
 
 const Homepage = ({ allNewsData }) => {
   const router = useRouter();
+
   return (
     <div>
       <>
