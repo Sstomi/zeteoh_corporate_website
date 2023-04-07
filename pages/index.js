@@ -39,12 +39,12 @@ const Homepage = ({ allNewsData }) => {
       <>
         <NextSeo
           title="zeteoh, Inc."
-          description="We detect human activities on wearables with AI."
+          description="Elevate human potential with the power of AI."
           canonical="https://www.canonical.ie/"
           openGraph={{
             url: "https://www.zeteoh.com/",
-            title: "zeteoh株式会社",
-            description: "Elevate human potential with the power of AI.",
+            title: "ホーム/Home",
+            description: "ビーコン不要の屋内位置測位システムTRAILS",
             images: [
               {
                 url: "https://www.zeteoh.com/images/Home/card-01.png",
