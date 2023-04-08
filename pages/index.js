@@ -10,11 +10,11 @@ import Usecase from "../components/TRAILS/Usecase";
 import Objects from "../components/TRAILS/Objects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { getSortedPostsData } from "../lib/newsPosts";
+import { getSortedNewsPostsData } from "../lib/newsPosts";
 import News from "../components/News";
 
 export async function getStaticProps({ locale }) {
-  const allNewsData = getSortedPostsData();
+  const allNewsData = getSortedNewsPostsData();
   return {
     props: {
       ...(await serverSideTranslations(locale, [

@@ -7,11 +7,11 @@ import Hero_company from "../components/COMPANY/Hero_company";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedNewsPostsData } from "../lib/newsPosts";
 import News from "../components/News";
 
 export async function getStaticProps({ locale }) {
-  const allNewsData = getSortedPostsData();
+  const allNewsData = getSortedNewsPostsData();
   return {
     props: {
       ...(await serverSideTranslations(locale, [
