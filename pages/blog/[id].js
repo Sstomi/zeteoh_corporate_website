@@ -1,12 +1,12 @@
 import Layout from "../../components/layout";
-import { getAllNewsPostIds, getNewsPostData } from "../../lib/newsPosts";
+import { getAllBlogPostIds, getBlogPostData } from "../../lib/blogPosts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 import Contact from "../../components/Contact";
 
 export async function getStaticProps({ params, locale }) {
-  const postData = await getNewsPostData(params.id);
+  const postData = await getBlogPostData(params.id);
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -22,7 +22,7 @@ export async function getStaticProps({ params, locale }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllNewsPostIds();
+  const paths = getAllBlogPostIds();
   return {
     paths,
     fallback: false,

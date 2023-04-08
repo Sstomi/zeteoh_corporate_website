@@ -5,7 +5,7 @@ import Head from "next/head";
 import Navbar2 from "../components/Navbar2";
 import Footer from "../components/Footer";
 import NewsList from "../components/NewsList";
-import { getSortedNewsPostsData } from "../lib/newsPosts";
+import { getSortedBlogPostsData } from "../lib/blogPosts";
 
 {
   /* 
@@ -15,7 +15,7 @@ and the news data.
 */
 }
 export async function getStaticProps({ locale }) {
-  const allNewsData = getSortedNewsPostsData();
+  const allNewsData = getSortedBlogPostsData();
   return {
     props: {
       ...(await serverSideTranslations(locale, ["footer"])),
