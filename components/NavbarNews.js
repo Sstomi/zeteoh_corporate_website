@@ -15,17 +15,22 @@ function Navbar() {
                 <Link href="/">
                   <a>
                     <Image
-                      className="rounded "
+                      className="rounded"
                       src="/images/Home/zeteoh_kana_logo.png" // Route of the image file
                       height={39} // Desired size with correct aspect ratio
                       width={138} // Desired size with correct aspect ratio
-                      alt="zeteoh-logo"
+                      alt="Home"
                     />
                   </a>
                 </Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
+                <Link href="/company">
+                    <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-medium">
+                      Company
+                    </a>
+                  </Link>
                   <Link href="/news">
                     <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-medium">
                       News
@@ -103,6 +108,11 @@ function Navbar() {
                 ref={ref}
                 className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
               >
+                <Link href="/company">
+                  <a className="cursor-pointer text-stone-800 hover:text-stone-400 block px-3 py-2 rounded-md text-base font-medium">
+                    COMPANY
+                  </a>
+                </Link>
                 <Link href="/news">
                   <a className="cursor-pointer text-stone-800 hover:text-stone-400 block px-3 py-2 rounded-md text-base font-medium">
                     NEWS
