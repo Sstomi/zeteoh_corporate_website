@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation("common");
+  const router = useRouter();
   return (
     <div className="">
       <nav className="fixed w-full z-10">
@@ -127,6 +131,16 @@ function Navbar() {
             </div>
           )}
         </Transition>
+        <div style={{ margin: "20px" }}>
+          <div>
+            {t("current_locale")}: {t(router.locale)}
+          </div>
+          <div>
+            <Link href="/" locale={router.locale === "en" ? "ja" : "en"}>
+              <button>{t("change_locale")}</button>
+            </Link>
+          </div>
+        </div>
       </nav>
     </div>
   );
