@@ -102,7 +102,7 @@ export default function Footer() {
                   src="/images/Home/zeteoh_kana_logo.png" // Route of the image file
                   height={39} // Desired size with correct aspect ratio
                   width={138} // Desired size with correct aspect ratio
-                  alt="zeteoh-logo"
+                  alt="zeteoh_logo"
                 />
               </a>
             </Link>

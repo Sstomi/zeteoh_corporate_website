@@ -38,7 +38,6 @@ export default function Layout({ children, home }) {
               <Link href="/news">
                 <a className="text-gray-900 hover:text-gray-600">
                   {t("back-to-news-list")}
-                  👈 ニュース一覧へ戻る
                 </a>
               </Link>
             </div>
