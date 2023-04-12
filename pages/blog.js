@@ -1,8 +1,7 @@
-import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
-import Navbar2 from "../components/Navbar2";
+import NavbarNews from "../components/NavbarNews";
 import Footer from "../components/Footer";
 import BlogList from "../components/BlogList";
 import { getSortedBlogPostsData } from "../lib/blogPosts";
@@ -32,7 +31,6 @@ by `getStaticProps` and send this to the component
 */
 }
 const BlogPage = ({ allBlogData }) => {
-  const router = useRouter();
   return (
     <div>
       <>
@@ -63,7 +61,7 @@ const BlogPage = ({ allBlogData }) => {
             site_name: "zeteoh",
           }}
           twitter={{
-            handle: "@Satomi48650478", // FIXME: translate this
+            handle: "@Satomi48650478", // FIXME: this should be zeteoh's handler
             site: "@zeteoh_ai",
             cardType: "summary_large_image",
           }}
@@ -74,7 +72,7 @@ const BlogPage = ({ allBlogData }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
-        <Navbar2 />
+        <NavbarNews />
         {/* We pass `allBlogData` to the component `BlogList` */}
         <BlogList allBlogData={allBlogData} />
       </main>

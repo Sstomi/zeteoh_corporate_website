@@ -10,11 +10,13 @@ export async function getStaticProps({ params, locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [
+        "common",
         "hero",
         "merit",
         "team",
         "contact",
         "footer",
+        "blog_list",
       ])),
       postData,
     },

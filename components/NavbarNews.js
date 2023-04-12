@@ -30,7 +30,7 @@ function Navbar() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/company">
+                  <Link href="/company">
                     <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-medium">
                       Company
                     </a>

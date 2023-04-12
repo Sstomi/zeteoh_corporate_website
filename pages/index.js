@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
@@ -36,7 +35,6 @@ export async function getStaticProps({ locale }) {
 }
 
 const Homepage = ({ allNewsData }) => {
-  const router = useRouter();
   return (
     <div>
       <>
