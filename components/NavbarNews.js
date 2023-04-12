@@ -57,6 +57,7 @@ function Navbar() {
                       {t("change_language")}
                     </a>
                   </Link>
+                  {/* FIXME: no translation button for the same page */}
                 </div>
               </div>
             </div>

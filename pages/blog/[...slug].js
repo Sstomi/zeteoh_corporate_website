@@ -1,4 +1,4 @@
-import BlogLayout from "../../components/blogLayout";
+import BlogLayout from "../../components/BlogLayout";
 import { getAllBlogPostIds, getBlogPostData } from "../../lib/blogPosts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getMDXComponent } from "mdx-bundler/client";
