@@ -10,7 +10,6 @@ function Navbar() {
   const { t } = useTranslation("common");
   const router = useRouter();
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onToggleLanguageClick = (newLocale) => {
     const { pathname, asPath, query } = router;
     router.push({ pathname, query }, asPath, { locale: newLocale });
