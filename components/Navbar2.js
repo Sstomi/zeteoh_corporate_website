@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation("common");
+  const router = useRouter();
   return (
     <div className="">
       <nav className="fixed w-full z-10 bg-gray-300">
@@ -31,6 +35,11 @@ function Navbar() {
                       News
                     </a>
                   </Link>
+                  <Link href="/blog">
+                    <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-medium">
+                      Blog
+                    </a>
+                  </Link>
                   <div className="ml-10 flex items-baseline space-x-4">
                     <Link href="/#contact-us">
                       <a className="cursor-pointer bg-primary-color text-white px-3 py-2 rounded-md text-base font-medium hover:bg-black shadow-lg">
@@ -38,6 +47,11 @@ function Navbar() {
                       </a>
                     </Link>
                   </div>
+                  <Link href="/" locale={router.locale === "en" ? "ja" : "en"}>
+                    <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-small">
+                      {t("change_language")}
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

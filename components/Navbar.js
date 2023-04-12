@@ -9,6 +9,15 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation("common");
   const router = useRouter();
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const onToggleLanguageClick = (newLocale) => {
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, asPath, { locale: newLocale });
+  };
+
+  const changeTo = router.locale === "en" ? "ja" : "en";
+
   return (
     <div className="">
       <nav className="fixed w-full z-10">
@@ -40,6 +49,11 @@ function Navbar() {
                       News
                     </a>
                   </Link>
+                  <Link href="/blog">
+                    <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-medium">
+                      Blog
+                    </a>
+                  </Link>
                   <div className="ml-10 flex items-baseline space-x-4">
                     <Link href="/#contact-us">
                       <a className="cursor-pointer bg-primary-color text-white px-3 py-2 rounded-md text-base font-medium hover:bg-black shadow-lg">
@@ -47,6 +61,14 @@ function Navbar() {
                       </a>
                     </Link>
                   </div>
+                  <Link href="/" locale={router.locale === "en" ? "ja" : "en"}>
+                    <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-small">
+                      {t("change_language")}
+                    </a>
+                  </Link>
+                  <button onClick={() => onToggleLanguageClick(changeTo)}>
+                    {t("change_language", { changeTo })}
+                  </button>
                 </div>
               </div>
             </div>
@@ -131,16 +153,6 @@ function Navbar() {
             </div>
           )}
         </Transition>
-        <div style={{ margin: "20px" }}>
-          <div>
-            {t("current_locale")}: {t(router.locale)}
-          </div>
-          <div>
-            <Link href="/" locale={router.locale === "en" ? "ja" : "en"}>
-              <button>{t("change_locale")}</button>
-            </Link>
-          </div>
-        </div>
       </nav>
     </div>
   );

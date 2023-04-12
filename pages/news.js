@@ -18,7 +18,7 @@ export async function getStaticProps({ locale }) {
   const allNewsData = getSortedNewsPostsData(locale);
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["footer"])),
+      ...(await serverSideTranslations(locale, ["common", "footer"])),
       allNewsData,
     },
   };
