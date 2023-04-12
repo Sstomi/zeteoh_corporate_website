@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
-import Navbar2 from "../components/Navbar2";
+import NavbarNews from "../components/NavbarNews";
 import Footer from "../components/Footer";
 import NewsList from "../components/NewsList";
 import { getSortedNewsPostsData } from "../lib/newsPosts";
@@ -74,7 +74,7 @@ const NewsPage = ({ allNewsData }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
-        <Navbar2 />
+        <NavbarNews />
         {/* We pass `allNewsData` to the component `NewsList` */}
         <NewsList allNewsData={allNewsData} />
       </main>
