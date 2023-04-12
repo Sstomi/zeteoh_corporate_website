@@ -4,34 +4,34 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import Navbar2 from "../components/Navbar2";
 import Footer from "../components/Footer";
-import NewsList from "../components/NewsList";
+import BlogList from "../components/BlogList";
 import { getSortedBlogPostsData } from "../lib/blogPosts";
 
 {
   /* 
 When nextjs build the website, this runs
 and will output the necessary data for the translation
-and the news data.
+and the blog data.
 */
 }
 export async function getStaticProps({ locale }) {
-  const allNewsData = getSortedBlogPostsData();
+  const allBlogData = getSortedBlogPostsData(locale);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["footer"])),
-      allNewsData,
+      allBlogData,
     },
   };
 }
 
 {
   /* 
-NewsPage will take the `allNewsData` created above
+BlogPage will take the `allBlogData` created above
 by `getStaticProps` and send this to the component
-`NewsList`.
+`BlogList`.
 */
 }
-const NewsPage = ({ allNewsData }) => {
+const BlogPage = ({ allBlogData }) => {
   const router = useRouter();
   return (
     <div>
@@ -39,11 +39,11 @@ const NewsPage = ({ allNewsData }) => {
         <NextSeo
           title="zeteoh, Inc."
           description="Elevate human potential with the power of AI."
-          canonical="https://www.canonical.ie/"
+          canonical="https://www.canonical.ie/" //FIXME: Change this to the correct canonical url
           openGraph={{
             url: "https://www.zeteoh.com/news",
-            title: "ニュース",
-            description: "ニュースやイベントの情報を知ることができます",
+            title: "ニュース", // FIXME: translate this
+            description: "ニュースやイベントの情報を知ることができます", // FIXME: translate this
             images: [
               {
                 url: "https://www.zeteoh.com/images/Home/card-01.png",
@@ -63,7 +63,7 @@ const NewsPage = ({ allNewsData }) => {
             site_name: "zeteoh",
           }}
           twitter={{
-            handle: "@Satomi48650478",
+            handle: "@Satomi48650478", // FIXME: translate this
             site: "@zeteoh_ai",
             cardType: "summary_large_image",
           }}
@@ -75,12 +75,12 @@ const NewsPage = ({ allNewsData }) => {
       </Head>
       <main>
         <Navbar2 />
-        {/* We pass `allNewsData` to the component `NewsList` */}
-        <NewsList allNewsData={allNewsData} />
+        {/* We pass `allBlogData` to the component `BlogList` */}
+        <BlogList allBlogData={allBlogData} />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default NewsPage;
+export default BlogPage;

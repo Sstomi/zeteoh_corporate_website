@@ -11,7 +11,7 @@ import { getSortedNewsPostsData } from "../lib/newsPosts";
 import News from "../components/News";
 
 export async function getStaticProps({ locale }) {
-  const allNewsData = getSortedNewsPostsData();
+  const allNewsData = getSortedNewsPostsData(locale);
   return {
     props: {
       ...(await serverSideTranslations(locale, [

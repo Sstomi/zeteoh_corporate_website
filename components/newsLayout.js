@@ -1,15 +1,14 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { useTranslation } from "next-i18next";
 
 const name = "News";
 export const siteTitle = "zeteoh株式会社";
 
-export default function Layout({ children, home }) {
-  const { t } = useTranslation("common");
+export default function NewsLayout({ children, home }) {
+  const { t } = useTranslation("news_list");
 
   return (
     <div className="bg-gray-300 ">
