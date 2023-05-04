@@ -14,7 +14,7 @@ export default function Usecase() {
           <p className="text-base text-gray-100">{t("usecase-sub")}</p>
         </div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <div className="items-stretch h-full overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
             <Image
               className=""
               src="/images/coming_soon.png" // Route of the image file

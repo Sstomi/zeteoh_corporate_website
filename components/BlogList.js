@@ -12,7 +12,9 @@ export default function BlogList({ allBlogData }) {
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
       <div className="py-16 max-w-screen-sm sm:mx-auto">
         <h2 className="text-3xl text-center font-bold">Blog</h2>
-        <p className="pt-2 text-center text-base">A blog.</p>
+        <p className="pt-2 text-center text-lg font-bold">
+          Unlock your business potential with TRAILS
+        </p>
         <hr className="w-full my-8 border-gray-300" />
         <ul className="">
           {allBlogData.map(({ id, date, title }) => (

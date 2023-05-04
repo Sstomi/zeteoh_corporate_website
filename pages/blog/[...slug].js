@@ -4,6 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 import Contact from "../../components/Contact";
+import BlogCta from "../../components/BlogCta";
 
 export async function getStaticProps({ params, locale }) {
   const postData = await getBlogPostData(params.slug[0], locale);
@@ -17,6 +18,7 @@ export async function getStaticProps({ params, locale }) {
         "contact",
         "footer",
         "blog_list",
+        "blogcta",
       ])),
       postData,
     },
@@ -41,7 +43,7 @@ export default function Post({ postData }) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
   return (
     <BlogLayout>
-      <div className="px-4 py-32 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-40">
+      <div className="px-4 py-32 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-12 lg:px-8 lg:py-40">
         <div className="max-w-screen-sm sm:mx-auto">
           <div className="prose lg:prose-lg">
             <h2 className="text-left">{frontmatter.title}</h2>
@@ -51,6 +53,7 @@ export default function Post({ postData }) {
               <Component
                 components={{
                   Contact,
+                  BlogCta,
                 }}
               />
             </article>

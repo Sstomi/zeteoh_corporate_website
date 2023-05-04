@@ -36,8 +36,8 @@ export default function BlogLayout({ children, home }) {
             <div className="text-center pb-16">
               <Link href="/blog">
                 <a className="text-gray-900 hover:text-gray-600">
+                  ⏪
                   {t("back-to-blog-list")}
-                  👈 back to Blog
                 </a>
               </Link>
             </div>
