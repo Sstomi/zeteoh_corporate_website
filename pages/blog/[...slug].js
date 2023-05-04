@@ -5,6 +5,8 @@ import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 import Contact from "../../components/Contact";
 import BlogCta from "../../components/BlogCta";
+import Callout from "../../components/blog_components/Callout";
+import ImageWithCaption from "../../components/blog_components/ImageWithCaption";
 
 export async function getStaticProps({ params, locale }) {
   const postData = await getBlogPostData(params.slug[0], locale);
@@ -54,6 +56,8 @@ export default function Post({ postData }) {
                 components={{
                   Contact,
                   BlogCta,
+                  Callout,
+                  ImageWithCaption,
                 }}
               />
             </article>

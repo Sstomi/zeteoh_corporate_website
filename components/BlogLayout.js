@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import { useTranslation } from "next-i18next";
 
 const name = "Blog";
+// FIXME: this should be translated
 export const siteTitle = "zeteoh株式会社";
 
 export default function BlogLayout({ children, home }) {
@@ -36,8 +37,7 @@ export default function BlogLayout({ children, home }) {
             <div className="text-center pb-16">
               <Link href="/blog">
                 <a className="text-gray-900 hover:text-gray-600">
-                  ⏪
-                  {t("back-to-blog-list")}
+                  ⏪{t("back-to-blog-list")}
                 </a>
               </Link>
             </div>
