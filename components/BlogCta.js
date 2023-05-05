@@ -22,14 +22,16 @@ export default function BlogCta() {
               </div>
               <p className="">{t("call-to-action")}</p>
             </div>
-            <div className="">
+            <div>
               <Link href="https://calendar.app.google/M3vmxbvKAuBBc39L9">
-                <a className="no-underline my-4 inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary-color hover:bg-Secondary-color focus:shadow-outline focus:outline-none">
+                <a className="no-underline inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none">
                   {t("button_meeting")}
                 </a>
               </Link>
+            </div>
+            <div>
               <Link href="/#contact-us">
-                <a className="no-underline inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-primary-color transition duration-200 rounded shadow-md bg- hover:bg-Secondary-color focus:shadow-outline focus:outline-none">
+                <a className="no-underline inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none">
                   {t("button_contact")}
                 </a>
               </Link>
