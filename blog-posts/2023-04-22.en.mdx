@@ -12,9 +12,9 @@ This article will review the most common technologies with their pros and cons.
 
 ## How Does it Work?
 
-There are two types of technologies: some use beacons or external devices required for tracking, and others leverage instinct sensors like inertial tracking.
+Indoor positioning technologies can be broadly classified into two types: those that use external devices such as beacons (sometimes called locators), and those that use sensors such as inertial tracking.
 
-Beacons come with their pros and cons. The accuracy is usually good or great but at the cost of a complex deployment. Installing 1000+ beacons for tracking assets in multiple buildings is not uncommon. For the location itself, tracking systems use trilateration or triangulation.
+When using beacons, triangulation, and trilateration are used to calculate the position.
 
 ### Trilateration
 
@@ -26,7 +26,7 @@ Trilateration uses the distance of at least three beacons near the target to tra
 
 <ImageWithCaption
   image_url="/images/Blog/2023-0422/trilateration.png"
-  long_caption="Trilateration: using the distance between at least 3 beacons or more and the object to track, we compute the position of the target."
+  long_caption="Trilateration: we compute the target's position using the distance between at least three beacons or more and the object to track."
   alt="An image of 3 locators and their own circle representing their range and the intersection being the located"
 />
 
@@ -40,6 +40,12 @@ Some beacons equipped with multiple antennas can estimate the angle at which a r
   alt="An image of 2 locators showing the angle at which the signal is receive that enables location."
 />
 
+Beacons come with their pros and cons. The accuracy is usually good or great but at the cost of a complex deployment. Installing 1000+ beacons for tracking assets in multiple buildings is not uncommon. Inertial navigation offers an alternative to using beacons.
+
+### Inertial
+
+Inertial navigation is a self-contained navigation technique in which measurements provided by accelerometers and gyroscopes are used to track the position and orientation of an object relative to a known starting point, direction, and velocity. The great point is that this method doesn't require beacons because it is self-contained. But most systems using inertial navigation are costly or have low accuracy.
+
 ## What Technologies?
 
 We are going to review the most known technologies for indoor location systems from 4 aspects:
@@ -51,7 +57,7 @@ We are going to review the most known technologies for indoor location systems f
 
 Let's get started.
 
-### GNSS
+### Global Navigation Satellite Systems (GNSS)
 
 Global Navigation Satellite Systems like the American GPS or Chinese BeiDou are widely used for outdoor localization. But when used indoors, their performance is significantly altered and is usually not recommended for a proper indoor location system.
 
@@ -90,7 +96,7 @@ WiFi is rather ubiquitous nowadays. Therefore, indoor location systems leveragin
 
 Suppose you already have an existing WiFi infrastructure, and a ~5m accuracy is acceptable. In that case, WiFi is a great alternative. It has a more extended range than Bluetooth, which offers more flexibility. But it is also affected by metallic structures and concrete. It should also be noted that beacons need to be connected to an external power source. Otherwise, consider one of the alternatives listed here.
 
-### UWB
+### Ultra-wideband (UWB)
 
 UWB is relatively new. This radio technology operates in a frequency range of 3.1 to 10.6 GHz. It uses very short pulses of radio waves and ToF to locate assets. It can offer great accuracy but is more expensive than previously mentioned technologies.
 
@@ -103,7 +109,7 @@ UWB is relatively new. This radio technology operates in a frequency range of 3.
 
 It requires beacons and has a range between Bluetooth and WiFi. It is also affected by the environment, like metallic structures. Still, with the right coverage, it offers an accuracy of under 1m. The beacons can usually operate for more than ten months on the battery. If your priority is accuracy over cost and your indoors is suitable, UWB is the best technology.
 
-### NFC
+### Near Field Communication (NFC)
 
 Surprisingly, Near Field Communication (NFC) can be used for non-real-time indoor location systems. By simply touching an NFC tag, assets, and people can be located in a building.
 
@@ -116,7 +122,7 @@ Surprisingly, Near Field Communication (NFC) can be used for non-real-time indoo
 
 NFC can be used for simple but robust non-real-time location systems.
 
-### PDR (**Pedestrian** Dead Reckoning)
+### Dead Reckoning (PDR)
 
 PDR leverages the accelerometer and gyroscope to track a person's location. This technology is commonly used on boats, submarines, and airplanes. However, with sensors (especially MEMS) and wearable devices becoming cheaper and more accurate, PDR has become an alternative to beacon-based indoor location systems.
 
