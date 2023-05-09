@@ -7,14 +7,15 @@ import Hero_company from "../components/COMPANY/Hero_company";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedNewsPostsData } from "../lib/newsPosts";
 import News from "../components/News";
 
 export async function getStaticProps({ locale }) {
-  const allNewsData = getSortedPostsData();
+  const allNewsData = getSortedNewsPostsData(locale);
   return {
     props: {
       ...(await serverSideTranslations(locale, [
+        "common",
         "hero_company",
         "team",
         "contact",
@@ -33,7 +34,7 @@ const Companypage = ({ allNewsData }) => {
         <NextSeo
           title="zeteoh, Inc."
           description="Elevate human potential with the power of AI."
-          canonical="https://www.canonical.ie/"
+          canonical="https://www.zeteoh.com/company"
           openGraph={{
             url: "https://www.zeteoh.com/company",
             title: "企業情報/Company",

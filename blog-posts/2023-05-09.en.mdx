@@ -1,0 +1,155 @@
+---
+title: "Unlock the Secret to Business Efficiency: How to Choose the Right Indoor Location System"
+date: "2023-05-09"
+thumbnail: "/images/Blog/2023-0422/RTLS_pros_cons.png"
+---
+
+![](/images/Blog/2023-0422/RTLS_pros_cons.png)
+
+Indoor location systems, sometimes called Real-Time Location Systems (RTLS), are used by an increasing number of businesses. They can offer benefits like improved safety, process optimization, and efficiency increase. What enables those benefits is the ability of indoor location systems to locate personnel, clients, and assets in closed areas, where the Global Navigation Satellite Systems (GNSS, like the American GPS or European Galileo) are unreliable. However, it can be confusing to navigate through all the available technologies.
+
+This article will review the most common technologies with their pros and cons.
+
+## How Does it Work?
+
+Indoor positioning technologies can be broadly classified into two types: those that use external devices such as beacons (sometimes called locators), and those that use sensors such as inertial tracking.
+
+When using beacons, triangulation, and trilateration are used to calculate the position.
+
+### Trilateration
+
+Trilateration uses the distance of at least three beacons near the target to track. This distance is usually inferred via Time of Flight (ToF), Two Way Ranging (TWR), or Time Difference of Arrival (TDoA).
+
+- **Time of Flight (ToF)**: method of measuring distance by sending a signal from a sender to a receiver and measuring the time it takes for the signal to travel between the two points. LiDAR and ultrasonic sensors also use ToF.
+- **Two Way Ranging (TWR)**: measures the time the signals travel back and forth between the beacons and the target. TWR is known for its high accuracy but is more complex to set up because it requires synchronized clocks.
+- **Time Difference of Arrival (TDoA)**: measures the difference in arrival times of signals at multiple receivers (like satellites). The GPS and other GNSS use TDoA.
+
+<ImageWithCaption
+  image_url="/images/Blog/2023-0422/trilateration.png"
+  long_caption="Trilateration: we compute the target's position using the distance between at least three beacons or more and the object to track."
+  alt="An image of 3 locators and their own circle representing their range and the intersection being the located"
+/>
+
+### Triangulation
+
+Some beacons equipped with multiple antennas can estimate the angle at which a received signal is. There are two standard methods: Angle of Arrival (AoA) and Angle of Departure (AoD).
+
+<ImageWithCaption
+  image_url="/images/Blog/2023-0422/triangulation-bluetooth.png"
+  long_caption="Triangulation: using 2 beacons or more, we can locate a target. Bluetooth devices use an array of antennas to estimate the angle at which a signal is received."
+  alt="An image of 2 locators showing the angle at which the signal is receive that enables location."
+/>
+
+Beacons come with their pros and cons. The accuracy is usually good or great but at the cost of a complex deployment. Installing 1000+ beacons for tracking assets in multiple buildings is not uncommon. Inertial navigation offers an alternative to using beacons.
+
+### Inertial
+
+Inertial navigation is a self-contained navigation technique in which measurements provided by accelerometers and gyroscopes are used to track the position and orientation of an object relative to a known starting point, direction, and velocity. The great point is that this method doesn't require beacons because it is self-contained. But most systems using inertial navigation are costly or have low accuracy.
+
+## What Technologies?
+
+We are going to review the most known technologies for indoor location systems from 4 aspects:
+
+- **Cost of implementation**, if you want to adopt the solution, how much will it cost?
+- **Accuracy**, how much precision should I expect in general?
+- **Flexibility**, if I want to do a Proof Of Concept (PoC), how hard is it to start? And what if my indoor environment is more complex than usual? Like a metallurgical plant, a boat, etc.
+- Is it suitable for real-time **people tracking**?
+
+Let's get started.
+
+### Global Navigation Satellite Systems (GNSS)
+
+GNSS like the American GPS or Chinese BeiDou are widely used for outdoor localization. But when used indoors, their performance is significantly altered and is usually not recommended for a proper indoor location system.
+
+<Callout>
+  - **Cost of implementation** 💰💰 
+  - **Accuracy** >10m 
+  - **Flexibility** ⭐⭐⭐
+  - **Suitable for tracking people** ✅
+</Callout>
+
+Depending on your situation, GNSS solutions can be considered. Still, in most cases, you will want something more accurate and reliable for RTLS.
+
+### Bluetooth & Bluetooth Low Energy (BLE)
+
+Bluetooth technology uses radio waves to communicate between devices. BLE is a Bluetooth variant widely used in indoor location systems due to its low power consumption and long battery life. In addition, BLE-enabled indoor location systems can provide real-time tracking, geofencing (the ability to restrict specific areas by creating virtual boundaries or “fences”), and proximity-based alerts.
+
+<Callout>
+  - **Cost of implementation** 💰💰 
+  - **Accuracy** >50cm-3m 
+  - **Flexibility**⭐⭐ 
+  - **Suitable for tracking people** ✅
+</Callout>
+
+ecause it requires beacons, BLE is too heavy to set up and unsuitable for complex environments like energy plants, construction sites, etc. It can also be complicated to use if you need to track indoor and outdoor locations. Additionally, Bluetooth is affected by metallic structures and concrete. It also has a limited range. With a high ceiling, it might be impossible to deploy beacons. Regarding the power source, BLE beacons can operate for several months on the battery. But, besides that, it offers a good balance in cost and accuracy with less than 1.5m with good coverage.
+
+### Wifi
+
+WiFi is rather ubiquitous nowadays. Therefore, indoor location systems leveraging this technology can offer lower entrance barriers than BLE but suffer from lower accuracy.
+
+<Callout>
+  - **Cost of implementation** 💰💰 
+  - **Accuracy** 3-6m 
+  - **Flexibility** ⭐⭐⭐
+  - **Suitable for tracking people** ✅
+</Callout>
+
+Suppose you already have an existing WiFi infrastructure, and a ~5m accuracy is acceptable. In that case, WiFi is a great alternative. It has a more extended range than Bluetooth, which offers more flexibility. But it is also affected by metallic structures and concrete. It should also be noted that beacons need to be connected to an external power source. Otherwise, consider one of the alternatives listed here.
+
+### Ultra-wideband (UWB)
+
+UWB is relatively new. This radio technology operates in a frequency range of 3.1 to 10.6 GHz. It uses very short pulses of radio waves and ToF to locate assets. It can offer great accuracy but is more expensive than previously mentioned technologies.
+
+<Callout>
+  - **Cost of implementation** 💰💰💰💰 
+  - **Accuracy** ＜1m 
+  - **Flexibility** ⭐
+  - **Suitable for tracking people** ✅
+</Callout>
+
+It requires beacons and has a range between Bluetooth and WiFi. It is also affected by the environment, like metallic structures. Still, with the right coverage, it offers an accuracy of under 1m. The beacons can usually operate for more than ten months on the battery. If your priority is accuracy over cost and your indoors is suitable, UWB is the best technology.
+
+### Near Field Communication (NFC)
+
+Surprisingly, NFC can be used for non-real-time indoor location systems. By simply touching an NFC tag, assets, and people can be located in a building.
+
+<Callout>
+  - **Cost of implementation** 💰💰 
+  - **Accuracy** - 
+  - **Flexibility** ⭐ 
+  - **Suitable for tracking people** ❌
+</Callout>
+
+NFC can be used for simple but robust non-real-time location systems.
+
+### Dead Reckoning (PDR)
+
+PDR leverages the accelerometer and gyroscope to track a person's location. This technology is commonly used on boats, submarines, and airplanes. However, with sensors (especially MEMS) and wearable devices becoming cheaper and more accurate, PDR has become an alternative to beacon-based indoor location systems.
+
+<Callout>
+  - **Cost of implementation** 💰💰💰💰 
+  - **Accuracy** >10m 
+  - **Flexibility**⭐⭐⭐⭐ 
+  - **Suitable for tracking people** ✅
+</Callout>
+
+If you need high accuracy, PDR will require expensive wearable devices. BLE and UWB are better alternatives if you can afford to use beacons.
+
+### Next Generation RTLS
+
+zeteoh TRAILS combines PDR with AI to offer the most flexible solution. Start implementing your indoor location system in a matter of hours, not weeks.
+
+<Callout>
+  - **Cost of implementation** 💰💰 
+  - **Accuracy** ＜3m 
+  - **Flexibility** ⭐⭐⭐
+  - **Suitable for tracking people** ✅
+</Callout>
+
+TRAILS also allows indoor/outdoor location tracking.
+
+<BlogCta />
+
+## Conclusion
+
+As we saw in this article, choosing the right technology for your indoor location is a lot of work. The solutions using beacons are usually more accurate but less flexible and require an enormous initial investment. But indoor location systems can benefit your businesses, and many successful cases exist.

@@ -5,7 +5,7 @@ import Head from "next/head";
 import NavbarNews from "../components/NavbarNews";
 import Footer from "../components/Footer";
 import NewsList from "../components/NewsList";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedNewsPostsData } from "../lib/newsPosts";
 
 {
   /* 
@@ -15,10 +15,10 @@ and the news data.
 */
 }
 export async function getStaticProps({ locale }) {
-  const allNewsData = getSortedPostsData();
+  const allNewsData = getSortedNewsPostsData(locale);
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["footer"])),
+      ...(await serverSideTranslations(locale, ["common", "footer"])),
       allNewsData,
     },
   };
@@ -39,7 +39,7 @@ const NewsPage = ({ allNewsData }) => {
         <NextSeo
           title="zeteoh, Inc."
           description="Elevate human potential with the power of AI."
-          canonical="https://www.canonical.ie/"
+          canonical="https://www.zeteoh.com/news"
           openGraph={{
             url: "https://www.zeteoh.com/news",
             title: "ニュース",

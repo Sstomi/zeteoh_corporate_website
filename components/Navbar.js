@@ -2,9 +2,21 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation("common");
+  const router = useRouter();
+
+  const onToggleLanguageClick = (newLocale) => {
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, asPath, { locale: newLocale });
+  };
+
+  const changeTo = router.locale === "en" ? "ja" : "en";
+
   return (
     <div className="">
       <nav className="fixed w-full z-10">
@@ -36,6 +48,11 @@ function Navbar() {
                       News
                     </a>
                   </Link>
+                  <Link href="/blog">
+                    <a className="cursor-pointer text-lg text-white hover:text-gray-400 px-3 py-2 rounded-md font-medium">
+                      Blog
+                    </a>
+                  </Link>
                   <div className="ml-10 flex items-baseline space-x-4">
                     <Link href="/#contact-us">
                       <a className="cursor-pointer bg-primary-color text-white px-3 py-2 rounded-md text-base font-medium hover:bg-black shadow-lg">
@@ -43,6 +60,22 @@ function Navbar() {
                       </a>
                     </Link>
                   </div>
+                  <button onClick={() => onToggleLanguageClick(changeTo)}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="white"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -118,11 +151,32 @@ function Navbar() {
                     NEWS
                   </a>
                 </Link>
+                <Link href="/blog">
+                  <a className="cursor-pointer text-stone-800 hover:text-stone-400 block px-3 py-2 rounded-md text-base font-medium">
+                    BLOG
+                  </a>
+                </Link>
                 <Link href="/#contact-us">
                   <a className="cursor-pointer text-stone-800 hover:text-stone-400 block px-3 py-2 rounded-md text-base font-medium">
                     CONTACT
                   </a>
                 </Link>
+                <button onClick={() => onToggleLanguageClick(changeTo)}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="black"
+                      className="mx-4 w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
+                      />
+                    </svg>
+                  </button>
               </div>
             </div>
           )}

@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
@@ -10,14 +9,18 @@ import Usecase from "../components/TRAILS/Usecase";
 import Objects from "../components/TRAILS/Objects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedNewsPostsData } from "../lib/newsPosts";
 import News from "../components/News";
+import BlogPosts from "../components/BlogPosts";
+import { getSortedBlogPostsData } from "../lib/blogPosts";
 
 export async function getStaticProps({ locale }) {
-  const allNewsData = getSortedPostsData();
+  const allNewsData = getSortedNewsPostsData(locale);
+  const allBlogPosts = getSortedBlogPostsData(locale);
   return {
     props: {
       ...(await serverSideTranslations(locale, [
+        "common",
         "hero_TRAILS",
         "intro",
         "overview",
@@ -26,21 +29,22 @@ export async function getStaticProps({ locale }) {
         "blog",
         "contact",
         "footer",
+        "blog_list",
+        "news_list",
       ])),
       allNewsData,
+      allBlogPosts,
     },
   };
 }
 
-const Homepage = ({ allNewsData }) => {
-  const router = useRouter();
+const Homepage = ({ allNewsData, allBlogPosts }) => {
   return (
     <div>
-      <>
         <NextSeo
           title="zeteoh, Inc."
           description="Elevate human potential with the power of AI."
-          canonical="https://www.canonical.ie/"
+          canonical="https://www.zeteoh.com/"
           openGraph={{
             url: "https://www.zeteoh.com/",
             title: "ホーム/Home",
@@ -69,7 +73,6 @@ const Homepage = ({ allNewsData }) => {
             cardType: "summary_large_image",
           }}
         />
-      </>
       <Head>
         <title>zeteoh, Inc.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -83,6 +86,7 @@ const Homepage = ({ allNewsData }) => {
         <Objects />
 
         <Contact />
+        <BlogPosts allBlogPosts={allBlogPosts} />
         <News allNewsData={allNewsData} />
       </main>
       <Footer />
