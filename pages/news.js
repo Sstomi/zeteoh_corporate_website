@@ -39,7 +39,7 @@ const NewsPage = ({ allNewsData }) => {
         <NextSeo
           title="zeteoh, Inc."
           description="Elevate human potential with the power of AI."
-          canonical="https://www.canonical.ie/"
+          canonical="https://www.zeteoh.com/news"
           openGraph={{
             url: "https://www.zeteoh.com/news",
             title: "ニュース",

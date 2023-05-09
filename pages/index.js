@@ -41,11 +41,10 @@ export async function getStaticProps({ locale }) {
 const Homepage = ({ allNewsData, allBlogPosts }) => {
   return (
     <div>
-      <>
         <NextSeo
           title="zeteoh, Inc."
           description="Elevate human potential with the power of AI."
-          canonical="https://www.canonical.ie/"
+          canonical="https://www.zeteoh.com/"
           openGraph={{
             url: "https://www.zeteoh.com/",
             title: "ホーム/Home",
@@ -74,7 +73,6 @@ const Homepage = ({ allNewsData, allBlogPosts }) => {
             cardType: "summary_large_image",
           }}
         />
-      </>
       <Head>
         <title>zeteoh, Inc.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
