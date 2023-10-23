@@ -38,7 +38,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-const Homepage = ({ allNewsData, allBlogPosts }) => {
+const Homepage = ({ allNewsData, allBlogPosts, locale }) => {
   return (
     <div>
         <NextSeo
@@ -87,7 +87,7 @@ const Homepage = ({ allNewsData, allBlogPosts }) => {
 
         <Contact />
         <BlogPosts allBlogPosts={allBlogPosts} />
-        <News allNewsData={allNewsData} />
+        <News allNewsData={allNewsData} locale={locale} />
       </main>
       <Footer />
     </div>
