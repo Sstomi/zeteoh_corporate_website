@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ConvertDate from "./ConvertDate";
 
-export default function News({ allNewsData }) {
+export default function News({ allNewsData, locale }) {
   return (
     <div className="py-16 bg-gray-200" id="last-news">
       <div className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
@@ -17,7 +17,7 @@ export default function News({ allNewsData }) {
               <ul>
                 {allNewsData.slice(0, 3).map(({ id, date, title }) => (
                   <li key={id}>
-                    <Link href={`/news/${id}`} locale="en">
+                    <Link href={`/news/${id}`} locale={locale}>
                       <a className="text-xl font-bold my-4">{title}</a>
                     </Link>
                     <br />
